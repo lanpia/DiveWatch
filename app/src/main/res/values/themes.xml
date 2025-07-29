@@ -1,0 +1,8 @@
+<!-- res/values/themes.xml -->
+<resources>
+    <style name="Theme.Dive" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- 옵션 -->
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+    </style>
+</resources>

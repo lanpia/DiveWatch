@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest package="com.example.dive"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- 웨어러블 디바이스 타겟 -->
+    <uses-feature android:name="android.hardware.type.watch" />
+    <uses-feature android:name="android.hardware.sensor.pressure" android:required="false" />
+
+    <!-- 필요한 권한 -->
+    <uses-permission android:name="android.permission.BODY_SENSORS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <application
+        android:allowBackup="true"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.Dive">
+
+        <!-- Standalone 설정 -->
+        <meta-data
+            android:name="com.google.android.wearable.standalone"
+            android:value="true" />
+
+        <!-- MainActivity 진입점 -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:theme="@style/Theme.Dive">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Google Play Wear 지원 라이브러리 -->
+        <uses-library
+            android:name="com.google.android.wearable"
+            android:required="true" />
+    </application>
+</manifest>
