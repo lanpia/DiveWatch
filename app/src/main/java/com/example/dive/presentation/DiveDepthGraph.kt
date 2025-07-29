@@ -5,8 +5,8 @@ import androidx.compose.foundation.Canvas
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.dp
+import androidx.compose.ui.geometry.Offset
 import androidx.compose.foundation.layout.*
-import kotlin.math.roundToInt
 
 @Composable
 fun DiveDepthGraph(depthHistory: List<Pair<Float, Long>>) {
@@ -17,10 +17,10 @@ fun DiveDepthGraph(depthHistory: List<Pair<Float, Long>>) {
         val maxDepth = points.maxOfOrNull { it.first } ?: 10f
         val spacing = size.width / (points.size + 1)
 
-        points.forEachIndexed { i, (depth, _) ->
-            val x = spacing * i
-            val y = size.height - (depth / maxDepth * size.height)
-            drawCircle(Color.Cyan, radius = 4f, center = androidx.compose.ui.geometry.Offset(x, y))
-        }
+        points.forEachIndexed { i, (depth, _) -> 
+            val x = spacing * i 
+            val y = size.height - (depth / maxDepth * size.height) 
+            drawCircle(Color.Cyan, radius = 4f, center = Offset(x, y))
+        } 
     }
 }
