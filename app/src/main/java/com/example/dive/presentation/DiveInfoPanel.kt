@@ -1,6 +1,6 @@
 package com.example.dive.presentation
 
-import androidx.compose.material3.Text
+import androidx.wear.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.unit.sp
 import androidx.compose.ui.Modifier

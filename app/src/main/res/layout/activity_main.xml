@@ -18,6 +18,7 @@
             android:text="현재 수심: -- m"
             android:textSize="20sp"
             android:textStyle="bold"
+            android:textColor="@color/custom_black"
             android:layout_marginBottom="8dp" />
 
         <TextView
@@ -26,6 +27,7 @@
             android:layout_height="wrap_content"
             android:text="다이브 시간: 0초"
             android:textSize="16sp"
+            android:textColor="@color/custom_black"
             android:layout_marginBottom="12dp" />
 
         <com.jjoe64.graphview.GraphView
@@ -39,7 +41,7 @@
             android:id="@+id/button_toggle_dive"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="다이브 시작" />
+            android:text="시작" />
 
     </LinearLayout>
 </androidx.wear.widget.BoxInsetLayout>

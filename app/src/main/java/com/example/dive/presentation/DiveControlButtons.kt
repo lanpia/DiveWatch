@@ -1,7 +1,7 @@
 package com.example.dive.presentation
 
-import androidx.compose.material3.Button
-import androidx.compose.material3.Text
+import androidx.wear.compose.material.Button
+import androidx.wear.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.foundation.layout.*
 import androidx.compose.ui.Modifier
@@ -15,7 +15,7 @@ fun DiveControlButtons(
     Row(modifier = Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.SpaceEvenly) {
         if (!isDiving) {
             Button(onClick = onStart) {
-                Text("다이브 시작")
+                Text("시작")
             }
         } else {
             Button(onClick = onEnd) {
