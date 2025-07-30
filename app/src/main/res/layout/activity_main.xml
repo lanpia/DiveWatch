@@ -1,34 +1,37 @@
-<?xml version="1.0" encoding="utf-8"?>
 <androidx.wear.widget.BoxInsetLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:graph="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@android:color/black">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
         android:padding="12dp"
-        android:gravity="center">
+        android:gravity="center_horizontal"
+        android:layout_gravity="center">
 
         <TextView
             android:id="@+id/depth_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="현재 수심: -- m"
+            android:text="현재 수심: -- cm"
+            android:textColor="@android:color/white"
             android:textSize="20sp"
             android:textStyle="bold"
-            android:textColor="@color/custom_black"
-            android:layout_marginBottom="8dp" />
+            android:layout_marginBottom="8dp"
+            android:layout_gravity="center_horizontal"/>
 
         <TextView
             android:id="@+id/dive_time_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="다이브 시간: 0초"
+            android:textColor="@android:color/white"
             android:textSize="16sp"
-            android:textColor="@color/custom_black"
-            android:layout_marginBottom="12dp" />
+            android:layout_marginBottom="12dp"
+            android:layout_gravity="center_horizontal"/>
 
         <com.jjoe64.graphview.GraphView
             android:id="@+id/depth_graph"
@@ -36,12 +39,10 @@
             android:layout_height="100dp"
             android:layout_marginBottom="16dp" />
 
-        <!-- ✅ 통합된 버튼 하나 -->
         <Button
-            android:id="@+id/button_toggle_dive"
+            android:id="@+id/button_dive_toggle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="시작" />
-
+            android:text="다이브 시작" />
     </LinearLayout>
 </androidx.wear.widget.BoxInsetLayout>
