@@ -1,0 +1,6 @@
+<resources>
+    <!-- 워치가 이 폰을 '리포트 수신 가능' 노드로 탐지하기 위한 capability -->
+    <string-array name="android_wear_capabilities">
+        <item>dive_report_receiver</item>
+    </string-array>
+</resources>

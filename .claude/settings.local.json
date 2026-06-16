@@ -1,0 +1,19 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(.\\\\gradlew.bat :app:compileDebugKotlin --console=plain 2>&1)",
+      "Bash(echo \"===== kimchi_premium =====\" && ls -la \"C:/Users/roina/Desktop/code/kimchi_premium\" 2>/dev/null; echo \"\" && echo \"===== bybitbot =====\" && ls -la \"C:/Users/roina/Desktop/code/bybot/bybitbot\" 2>/dev/null; echo \"\" && echo \"===== bybot parent =====\" && ls -la \"C:/Users/roina/Desktop/code/bybot\" 2>/dev/null)",
+      "Read(//c/Users/roina/Desktop/code/**)",
+      "Bash(sed -n '1,40p' kimchi_premium/server.py)",
+      "Bash(sed -n '1,30p' kimchi_premium/ui_pyqtapp.py)",
+      "Bash(sed -n '1,40p' bybot/bybitbot/trading-bot/app.py)",
+      "Bash(sed -n '1,40p' bybot/bybitbot/trading-bot/kimp.py)",
+      "Bash(git branch *)",
+      "Bash(git remote *)",
+      "Bash(git add *)",
+      "Bash(git commit -m '@ *)",
+      "Bash(git status *)",
+      "Bash(git log *)"
+    ]
+  }
+}

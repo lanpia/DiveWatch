@@ -4,7 +4,7 @@ import android.os.Bundle
 import android.view.WindowManager
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
-import com.example.dive.presentation.DiveScreen
+import com.example.dive.presentation.DiveApp
 import com.example.dive.sensor.PressureSensorManager
 import com.example.dive.ui.theme.DiveTheme
 
@@ -20,7 +20,7 @@ class MainActivity : ComponentActivity() {
 
         setContent {
             DiveTheme {
-                DiveScreen(pressureSensorManager)
+                DiveApp(pressureSensorManager)
             }
         }
     }
