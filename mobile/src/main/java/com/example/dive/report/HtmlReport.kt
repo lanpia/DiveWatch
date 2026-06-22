@@ -1,4 +1,4 @@
-package com.example.dive.export
+package com.example.dive.report
 
 import com.example.dive.model.DiveMode
 import com.example.dive.model.DiveSession
@@ -7,9 +7,8 @@ import java.util.Date
 import java.util.Locale
 
 /**
- * 다이브 세션들을 자체 완결형(외부 의존성 없음) HTML 리포트 문자열로 변환한다.
- * - 요약 대시보드(누적 통계 + 세션 목록)
- * - 세션별 상세(수심 프로파일 SVG 차트 + 통계, 프리다이빙은 다이브별 표)
+ * 다이브 세션들을 자체 완결형 HTML 리포트로 변환한다(폰에서 생성).
+ * 프리다이빙/스쿠버 탭 + 세션별 상세(수심 프로파일 SVG).
  */
 object HtmlReport {
 
@@ -25,48 +24,92 @@ object HtmlReport {
         sb.append("<h1>🤿 다이브 로그 리포트</h1>")
         sb.append("<p class=\"gen\">생성: ").append(dateTime(nowMs)).append("</p>")
 
-        appendDashboard(sb, sessions)
-
         if (sessions.isEmpty()) {
             sb.append("<p class=\"muted\">저장된 다이브 세션이 없습니다.</p>")
         } else {
-            sb.append("<h2>세션 상세</h2>")
-            sessions.forEachIndexed { i, s -> appendSession(sb, s, i) }
+            sb.append("<div class=\"tabs\">")
+            sb.append("<button id=\"btn-free\" class=\"tab active\" onclick=\"showTab('free')\">프리다이빙</button>")
+            sb.append("<button id=\"btn-scuba\" class=\"tab\" onclick=\"showTab('scuba')\">스쿠버</button>")
+            sb.append("</div>")
+            appendModeTab(sb, "free", sessions, DiveMode.FREEDIVING, visible = true)
+            appendModeTab(sb, "scuba", sessions, DiveMode.SCUBA, visible = false)
+            sb.append(tabScript())
         }
 
         sb.append("</body></html>")
         return sb.toString()
     }
 
-    private fun appendDashboard(sb: StringBuilder, sessions: List<DiveSession>) {
+    private fun appendModeTab(
+        sb: StringBuilder,
+        paneId: String,
+        allSessions: List<DiveSession>,
+        mode: DiveMode,
+        visible: Boolean
+    ) {
+        sb.append("<div id=\"tab-").append(paneId).append("\" class=\"tabpane\"")
+        if (!visible) sb.append(" style=\"display:none\"")
+        sb.append(">")
+
+        val indexed = allSessions.withIndex().filter { it.value.mode == mode }
+        if (indexed.isEmpty()) {
+            sb.append("<p class=\"muted\">기록이 없습니다.</p></div>")
+            return
+        }
+
+        val sessions = indexed.map { it.value }
         val totalDives = sessions.sumOf { it.diveCount }
         val deepest = sessions.maxOfOrNull { it.maxDepth } ?: 0f
         val totalTime = sessions.sumOf { it.totalDiveSec }
 
-        sb.append("<h2>요약</h2><div class=\"cards\">")
+        sb.append("<div class=\"cards\">")
         card(sb, "${sessions.size}", "세션")
         card(sb, "$totalDives", "총 다이브")
         card(sb, "${f1(deepest)} m", "최고 수심")
         card(sb, fmtClock(totalTime), "총 시간")
         sb.append("</div>")
 
-        if (sessions.isNotEmpty()) {
-            sb.append("<table><tr><th>날짜</th><th>모드</th><th>최대</th><th>시간/회수</th></tr>")
-            sessions.forEachIndexed { i, s ->
-                val tail = if (s.mode == DiveMode.FREEDIVING) "${s.diveCount}회" else fmtClock(s.totalDiveSec)
-                sb.append("<tr><td><a href=\"#s$i\">").append(dateShort(s.startTime)).append("</a></td>")
-                sb.append("<td>").append(modeLabel(s.mode)).append("</td>")
-                sb.append("<td>").append(f1(s.maxDepth)).append(" m</td>")
-                sb.append("<td>").append(tail).append("</td></tr>")
-            }
-            sb.append("</table>")
+        sb.append("<table><tr><th>날짜</th><th>최대</th><th>시간/회수</th></tr>")
+        indexed.forEach { (i, s) ->
+            val tail = if (s.mode == DiveMode.FREEDIVING) "${s.diveCount}회" else fmtClock(s.totalDiveSec)
+            sb.append("<tr><td><a href=\"#s$i\">").append(dateShort(s.startTime)).append("</a></td>")
+            sb.append("<td>").append(f1(s.maxDepth)).append(" m</td>")
+            sb.append("<td>").append(tail).append("</td></tr>")
         }
+        sb.append("</table>")
+
+        sb.append("<h2>세션 상세</h2>")
+        indexed.forEach { (i, s) -> appendSession(sb, s, i) }
+
+        sb.append("</div>")
     }
+
+    private fun tabScript(): String =
+        "<script>function showTab(id){" +
+            "var p=document.getElementsByClassName('tabpane');for(var i=0;i<p.length;i++)p[i].style.display='none';" +
+            "var t=document.getElementsByClassName('tab');for(var i=0;i<t.length;i++)t[i].classList.remove('active');" +
+            "document.getElementById('tab-'+id).style.display='block';" +
+            "document.getElementById('btn-'+id).classList.add('active');}</script>"
 
     private fun appendSession(sb: StringBuilder, s: DiveSession, index: Int) {
         sb.append("<div class=\"session\" id=\"s$index\">")
         sb.append("<h3>").append(dateTime(s.startTime))
             .append("<span class=\"tag\">").append(modeLabel(s.mode)).append("</span></h3>")
+
+        val placeLabel = s.placeName
+        val lat = s.latitude
+        val lng = s.longitude
+        if (placeLabel != null || (lat != null && lng != null)) {
+            val label = placeLabel ?: String.format(Locale.US, "%.5f, %.5f", lat, lng)
+            sb.append("<p class=\"muted\">📍 ")
+            if (lat != null && lng != null) {
+                sb.append("<a href=\"https://www.google.com/maps?q=").append(lat).append(",").append(lng)
+                    .append("\">").append(escapeHtml(label)).append("</a>")
+            } else {
+                sb.append(escapeHtml(label))
+            }
+            sb.append("</p>")
+        }
 
         sb.append("<div class=\"cards\">")
         card(sb, "${f1(s.maxDepth)} m", "최대 수심")
@@ -93,7 +136,6 @@ object HtmlReport {
         sb.append("</div>")
     }
 
-    /** 세션 내 모든 다이브의 수심 샘플을 순서대로 이어 그린 프로파일 차트 */
     private fun depthChartSvg(session: DiveSession): String {
         val depths = ArrayList<Float>()
         session.dives.forEach { dive -> dive.samples.forEach { depths.add(it.depth) } }
@@ -137,6 +179,9 @@ object HtmlReport {
 
     private fun modeLabel(mode: DiveMode) = if (mode == DiveMode.FREEDIVING) "프리다이빙" else "스쿠버"
 
+    private fun escapeHtml(s: String): String =
+        s.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;").replace("\"", "&quot;")
+
     private fun f1(v: Float) = String.format(Locale.US, "%.1f", v)
 
     private fun fmtClock(totalSec: Long): String {
@@ -160,6 +205,9 @@ object HtmlReport {
         .gen{color:#7fa8bd;font-size:12px;margin-top:0;}
         .muted{color:#9bbccb;font-size:12px;}
         .cards{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0;}
+        .tabs{display:flex;gap:8px;margin:14px 0;}
+        .tab{flex:1;background:#12303d;color:#9bbccb;border:none;border-radius:10px;padding:12px 8px;font-size:15px;}
+        .tab.active{background:#4fc3f7;color:#08161d;font-weight:500;}
         .card{background:#12303d;border-radius:10px;padding:10px 14px;min-width:84px;}
         .card .v{font-size:18px;font-weight:bold;color:#4fc3f7;}
         .card .l{font-size:11px;color:#9bbccb;}

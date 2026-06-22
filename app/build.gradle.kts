@@ -44,6 +44,9 @@ android {
 }
 
 dependencies {
+    // Samsung Health Sensor SDK (피부온도/체온) — app/libs/*.aar
+    implementation(fileTree(mapOf("dir" to "libs", "include" to listOf("*.aar"))))
+
     implementation(platform(libs.compose.bom))
 
     implementation(libs.kotlinx.serialization.json)

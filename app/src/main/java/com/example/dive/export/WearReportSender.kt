@@ -7,18 +7,21 @@ import com.google.android.gms.wearable.CapabilityClient
 import com.google.android.gms.wearable.Wearable
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
+import kotlinx.serialization.encodeToString
+import kotlinx.serialization.json.Json
 
 /**
- * 워치 → 폰(컴패니언 앱) 으로 HTML 리포트를 데이터 레이어(ChannelClient)로 전송한다.
- * 성공 시 수신 노드(폰) 이름을 반환, 실패 시 예외를 던진다.
+ * 워치 → 폰(컴패니언) 으로 **원본 세션 JSON만** 전송한다.
+ * 리포트(HTML) 생성은 폰이 담당한다. 성공 시 수신 노드(폰) 이름을 반환.
  */
 object WearReportSender {
     private const val CAPABILITY = "dive_report_receiver"
     private const val PATH = "/dive-report"
+    private val json = Json { ignoreUnknownKeys = true }
 
-    suspend fun sendReport(context: Context, sessions: List<DiveSession>, nowMs: Long): String =
+    suspend fun sendReport(context: Context, sessions: List<DiveSession>): String =
         withContext(Dispatchers.IO) {
-            val html = HtmlReport.build(sessions, nowMs)
+            val jsonBytes = json.encodeToString(sessions).toByteArray(Charsets.UTF_8)
 
             val capability = Tasks.await(
                 Wearable.getCapabilityClient(context)
@@ -31,8 +34,7 @@ object WearReportSender {
             val channelClient = Wearable.getChannelClient(context)
             val channel = Tasks.await(channelClient.openChannel(node.id, PATH))
             val output = Tasks.await(channelClient.getOutputStream(channel))
-            output.use { it.write(html.toByteArray(Charsets.UTF_8)) }
-
+            output.use { it.write(jsonBytes) }
             node.displayName
         }
 }

@@ -8,48 +8,65 @@ import android.content.Intent
 import android.graphics.drawable.Icon
 import android.net.Uri
 import androidx.core.content.FileProvider
+import com.example.dive.model.DiveSession
+import com.example.dive.report.HtmlReport
 import com.google.android.gms.auth.api.signin.GoogleSignIn
 import com.google.android.gms.tasks.Tasks
 import com.google.android.gms.wearable.ChannelClient
 import com.google.android.gms.wearable.Wearable
 import com.google.android.gms.wearable.WearableListenerService
+import kotlinx.serialization.decodeFromString
+import kotlinx.serialization.json.Json
 import java.io.File
 
 /**
- * 워치에서 ChannelClient로 보낸 HTML 리포트를 수신한다.
- * - Google 로그인 상태면: 자동으로 Drive에 업로드하고 링크 알림을 띄운다.
- * - 미로그인 상태면: 보기(브라우저)/공유(→ Drive 등) 알림을 띄운다.
- *
- * 백그라운드 액티비티 실행 제한(Android 12+) 때문에 직접 startActivity 대신
- * 알림 탭으로 액티비티를 실행한다.
+ * 워치가 보낸 원본 JSON(세션 목록)을 수신해 **폰에서 리포트를 생성**한다.
+ * - Google 로그인 시: JSON·HTML 둘 다 Drive 폴더에 업로드(중복 삭제 후).
+ * - 미로그인 시: 보기/공유 알림.
+ * 받은 리포트는 항상 로컬(received_report.html)에 보관 → 폰 앱에서 표시.
  */
 class ReportReceiverService : WearableListenerService() {
+
+    private val json = Json { ignoreUnknownKeys = true }
 
     override fun onChannelOpened(channel: ChannelClient.Channel) {
         if (channel.path != PATH) return
         val client = Wearable.getChannelClient(this)
         try {
             val input = Tasks.await(client.getInputStream(channel))
-            val bytes = input.use { it.readBytes() }
-            val html = String(bytes, Charsets.UTF_8)
+            val jsonBytes = input.use { it.readBytes() }
+
+            val sessions = try {
+                json.decodeFromString<List<DiveSession>>(String(jsonBytes, Charsets.UTF_8))
+            } catch (e: Exception) {
+                emptyList()
+            }
+            val htmlBytes = HtmlReport.build(sessions, System.currentTimeMillis())
+                .toByteArray(Charsets.UTF_8)
 
             val dir = File(cacheDir, "reports").apply { mkdirs() }
-            val file = File(dir, "received_report.html")
-            file.writeBytes(bytes)
+            val reportFile = File(dir, "received_report.html")
+            reportFile.writeBytes(htmlBytes)
+            File(dir, "received_data.json").writeBytes(jsonBytes)
 
             val account = GoogleSignIn.getLastSignedInAccount(this)?.account
             if (account != null) {
                 try {
-                    val link = DriveUploader.upload(this, account, html, "dive_report.html")
+                    val link = DriveUploader.upload(
+                        this, account, htmlBytes, "dive_report.html", "text/html", DRIVE_FOLDER
+                    )
+                    DriveUploader.upload(
+                        this, account, jsonBytes, "dive_data.json", "application/json", DRIVE_FOLDER
+                    )
                     notifyUploaded(link)
                     return
                 } catch (e: Exception) {
                     // 업로드 실패 → 보기/공유 알림으로 폴백
                 }
             }
-            notifyReceived(file)
+            notifyReceived(reportFile)
         } catch (e: Exception) {
-            // 수신 실패 — 추후 로깅 추가 가능
+            // 수신/생성 실패
         } finally {
             client.close(channel)
         }
@@ -64,7 +81,7 @@ class ReportReceiverService : WearableListenerService() {
         )
         notify(
             title = "Drive 업로드 완료",
-            text = "탭하여 Drive에서 리포트 열기",
+            text = "리포트·원본 데이터 업로드됨 · 탭하여 Drive 열기",
             contentIntent = pending,
             action = null
         )
@@ -131,6 +148,7 @@ class ReportReceiverService : WearableListenerService() {
 
     companion object {
         const val PATH = "/dive-report"
+        private const val DRIVE_FOLDER = "Dive 컴패니언 로그"
         private const val CHANNEL_ID = "dive_reports"
         private const val NOTIFICATION_ID = 1001
     }

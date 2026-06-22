@@ -8,135 +8,138 @@
 8        android:minSdkVersion="26"
 9        android:targetSdkVersion="36" />
 10
-11    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
-11-->C:\Users\roina\AndroidStudioProjects\Dive\mobile\src\main\AndroidManifest.xml:4:5-77
-11-->C:\Users\roina\AndroidStudioProjects\Dive\mobile\src\main\AndroidManifest.xml:4:22-74
-12
-13    <permission
-13-->[androidx.core:core:1.10.1] C:\Users\roina\.gradle\caches\8.13\transforms\9909882e73f4e6139fa7449df7c46b62\transformed\core-1.10.1\AndroidManifest.xml:22:5-24:47
-14        android:name="com.example.dive.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
-14-->[androidx.core:core:1.10.1] C:\Users\roina\.gradle\caches\8.13\transforms\9909882e73f4e6139fa7449df7c46b62\transformed\core-1.10.1\AndroidManifest.xml:23:9-81
-15        android:protectionLevel="signature" />
-15-->[androidx.core:core:1.10.1] C:\Users\roina\.gradle\caches\8.13\transforms\9909882e73f4e6139fa7449df7c46b62\transformed\core-1.10.1\AndroidManifest.xml:24:9-44
-16
-17    <uses-permission android:name="com.example.dive.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
-17-->[androidx.core:core:1.10.1] C:\Users\roina\.gradle\caches\8.13\transforms\9909882e73f4e6139fa7449df7c46b62\transformed\core-1.10.1\AndroidManifest.xml:26:5-97
-17-->[androidx.core:core:1.10.1] C:\Users\roina\.gradle\caches\8.13\transforms\9909882e73f4e6139fa7449df7c46b62\transformed\core-1.10.1\AndroidManifest.xml:26:22-94
-18
-19    <application
-19-->C:\Users\roina\AndroidStudioProjects\Dive\mobile\src\main\AndroidManifest.xml:6:5-44:19
-20        android:allowBackup="true"
-20-->C:\Users\roina\AndroidStudioProjects\Dive\mobile\src\main\AndroidManifest.xml:7:9-35
-21        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-21-->[androidx.core:core:1.10.1] C:\Users\roina\.gradle\caches\8.13\transforms\9909882e73f4e6139fa7449df7c46b62\transformed\core-1.10.1\AndroidManifest.xml:28:18-86
-22        android:debuggable="true"
-23        android:extractNativeLibs="false"
-24        android:label="@string/app_name"
-24-->C:\Users\roina\AndroidStudioProjects\Dive\mobile\src\main\AndroidManifest.xml:8:9-41
-25        android:theme="@android:style/Theme.Material.Light" >
-25-->C:\Users\roina\AndroidStudioProjects\Dive\mobile\src\main\AndroidManifest.xml:9:9-60
-26
-27        <!-- 최초 1회 실행되어야 데이터 레이어 수신이 활성화됩니다. -->
-28        <activity
-28-->C:\Users\roina\AndroidStudioProjects\Dive\mobile\src\main\AndroidManifest.xml:12:9-19:20
-29            android:name="com.example.dive.mobile.MainActivity"
-29-->C:\Users\roina\AndroidStudioProjects\Dive\mobile\src\main\AndroidManifest.xml:13:13-41
-30            android:exported="true" >
-30-->C:\Users\roina\AndroidStudioProjects\Dive\mobile\src\main\AndroidManifest.xml:14:13-36
-31            <intent-filter>
-31-->C:\Users\roina\AndroidStudioProjects\Dive\mobile\src\main\AndroidManifest.xml:15:13-18:29
-32                <action android:name="android.intent.action.MAIN" />
-32-->C:\Users\roina\AndroidStudioProjects\Dive\mobile\src\main\AndroidManifest.xml:16:17-69
-32-->C:\Users\roina\AndroidStudioProjects\Dive\mobile\src\main\AndroidManifest.xml:16:25-66
-33
-34                <category android:name="android.intent.category.LAUNCHER" />
-34-->C:\Users\roina\AndroidStudioProjects\Dive\mobile\src\main\AndroidManifest.xml:17:17-77
-34-->C:\Users\roina\AndroidStudioProjects\Dive\mobile\src\main\AndroidManifest.xml:17:27-74
-35            </intent-filter>
-36        </activity>
-37
-38        <!-- 워치에서 보낸 리포트 채널 수신 -->
-39        <service
-39-->C:\Users\roina\AndroidStudioProjects\Dive\mobile\src\main\AndroidManifest.xml:22:9-32:19
-40            android:name="com.example.dive.mobile.ReportReceiverService"
-40-->C:\Users\roina\AndroidStudioProjects\Dive\mobile\src\main\AndroidManifest.xml:23:13-50
-41            android:exported="true" >
-41-->C:\Users\roina\AndroidStudioProjects\Dive\mobile\src\main\AndroidManifest.xml:24:13-36
-42            <intent-filter>
-42-->C:\Users\roina\AndroidStudioProjects\Dive\mobile\src\main\AndroidManifest.xml:25:13-31:29
-43                <action android:name="com.google.android.gms.wearable.CHANNEL_EVENT" />
-43-->C:\Users\roina\AndroidStudioProjects\Dive\mobile\src\main\AndroidManifest.xml:26:17-88
-43-->C:\Users\roina\AndroidStudioProjects\Dive\mobile\src\main\AndroidManifest.xml:26:25-85
-44
-45                <data
-45-->C:\Users\roina\AndroidStudioProjects\Dive\mobile\src\main\AndroidManifest.xml:27:17-30:57
-46                    android:host="*"
-46-->C:\Users\roina\AndroidStudioProjects\Dive\mobile\src\main\AndroidManifest.xml:29:21-37
-47                    android:pathPrefix="/dive-report"
-47-->C:\Users\roina\AndroidStudioProjects\Dive\mobile\src\main\AndroidManifest.xml:30:21-54
-48                    android:scheme="wear" />
-48-->C:\Users\roina\AndroidStudioProjects\Dive\mobile\src\main\AndroidManifest.xml:28:21-42
-49            </intent-filter>
-50        </service>
-51
-52        <!-- 수신한 HTML을 브라우저로 열기 위한 FileProvider -->
-53        <provider
-54            android:name="androidx.core.content.FileProvider"
-54-->C:\Users\roina\AndroidStudioProjects\Dive\mobile\src\main\AndroidManifest.xml:36:13-62
-55            android:authorities="com.example.dive.fileprovider"
-55-->C:\Users\roina\AndroidStudioProjects\Dive\mobile\src\main\AndroidManifest.xml:37:13-64
-56            android:exported="false"
-56-->C:\Users\roina\AndroidStudioProjects\Dive\mobile\src\main\AndroidManifest.xml:38:13-37
-57            android:grantUriPermissions="true" >
-57-->C:\Users\roina\AndroidStudioProjects\Dive\mobile\src\main\AndroidManifest.xml:39:13-47
-58            <meta-data
-58-->C:\Users\roina\AndroidStudioProjects\Dive\mobile\src\main\AndroidManifest.xml:40:13-42:54
-59                android:name="android.support.FILE_PROVIDER_PATHS"
-59-->C:\Users\roina\AndroidStudioProjects\Dive\mobile\src\main\AndroidManifest.xml:41:17-67
-60                android:resource="@xml/file_paths" />
-60-->C:\Users\roina\AndroidStudioProjects\Dive\mobile\src\main\AndroidManifest.xml:42:17-51
-61        </provider>
-62
-63        <activity
-63-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\roina\.gradle\caches\8.13\transforms\8ff76422cc7699de110d84644cdd615b\transformed\play-services-auth-20.7.0\AndroidManifest.xml:23:9-27:75
-64            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
-64-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\roina\.gradle\caches\8.13\transforms\8ff76422cc7699de110d84644cdd615b\transformed\play-services-auth-20.7.0\AndroidManifest.xml:24:13-93
-65            android:excludeFromRecents="true"
-65-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\roina\.gradle\caches\8.13\transforms\8ff76422cc7699de110d84644cdd615b\transformed\play-services-auth-20.7.0\AndroidManifest.xml:25:13-46
-66            android:exported="false"
-66-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\roina\.gradle\caches\8.13\transforms\8ff76422cc7699de110d84644cdd615b\transformed\play-services-auth-20.7.0\AndroidManifest.xml:26:13-37
-67            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-67-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\roina\.gradle\caches\8.13\transforms\8ff76422cc7699de110d84644cdd615b\transformed\play-services-auth-20.7.0\AndroidManifest.xml:27:13-72
-68        <!--
-69            Service handling Google Sign-In user revocation. For apps that do not integrate with
-70            Google Sign-In, this service will never be started.
-71        -->
-72        <service
-72-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\roina\.gradle\caches\8.13\transforms\8ff76422cc7699de110d84644cdd615b\transformed\play-services-auth-20.7.0\AndroidManifest.xml:33:9-37:51
-73            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
-73-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\roina\.gradle\caches\8.13\transforms\8ff76422cc7699de110d84644cdd615b\transformed\play-services-auth-20.7.0\AndroidManifest.xml:34:13-89
-74            android:exported="true"
-74-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\roina\.gradle\caches\8.13\transforms\8ff76422cc7699de110d84644cdd615b\transformed\play-services-auth-20.7.0\AndroidManifest.xml:35:13-36
-75            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"
-75-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\roina\.gradle\caches\8.13\transforms\8ff76422cc7699de110d84644cdd615b\transformed\play-services-auth-20.7.0\AndroidManifest.xml:36:13-107
-76            android:visibleToInstantApps="true" />
-76-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\roina\.gradle\caches\8.13\transforms\8ff76422cc7699de110d84644cdd615b\transformed\play-services-auth-20.7.0\AndroidManifest.xml:37:13-48
-77
-78        <activity
-78-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\roina\.gradle\caches\8.13\transforms\90803581887c040358eda7e49af1ccdf\transformed\play-services-base-18.0.1\AndroidManifest.xml:20:9-22:45
-79            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-79-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\roina\.gradle\caches\8.13\transforms\90803581887c040358eda7e49af1ccdf\transformed\play-services-base-18.0.1\AndroidManifest.xml:20:19-85
-80            android:exported="false"
-80-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\roina\.gradle\caches\8.13\transforms\90803581887c040358eda7e49af1ccdf\transformed\play-services-base-18.0.1\AndroidManifest.xml:22:19-43
-81            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-81-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\roina\.gradle\caches\8.13\transforms\90803581887c040358eda7e49af1ccdf\transformed\play-services-base-18.0.1\AndroidManifest.xml:21:19-78
-82
-83        <meta-data
-83-->[com.google.android.gms:play-services-basement:18.2.0] C:\Users\roina\.gradle\caches\8.13\transforms\178f8a1ff4447a3568f121cd7adf33a3\transformed\play-services-basement-18.2.0\AndroidManifest.xml:21:9-23:69
-84            android:name="com.google.android.gms.version"
-84-->[com.google.android.gms:play-services-basement:18.2.0] C:\Users\roina\.gradle\caches\8.13\transforms\178f8a1ff4447a3568f121cd7adf33a3\transformed\play-services-basement-18.2.0\AndroidManifest.xml:22:13-58
-85            android:value="@integer/google_play_services_version" />
-85-->[com.google.android.gms:play-services-basement:18.2.0] C:\Users\roina\.gradle\caches\8.13\transforms\178f8a1ff4447a3568f121cd7adf33a3\transformed\play-services-basement-18.2.0\AndroidManifest.xml:23:13-66
-86    </application>
-87
-88</manifest>
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->C:\Users\roina\AndroidStudioProjects\Dive\mobile\src\main\AndroidManifest.xml:4:5-67
+11-->C:\Users\roina\AndroidStudioProjects\Dive\mobile\src\main\AndroidManifest.xml:4:22-64
+12    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+12-->C:\Users\roina\AndroidStudioProjects\Dive\mobile\src\main\AndroidManifest.xml:5:5-77
+12-->C:\Users\roina\AndroidStudioProjects\Dive\mobile\src\main\AndroidManifest.xml:5:22-74
+13
+14    <permission
+14-->[androidx.core:core:1.10.1] C:\Users\roina\.gradle\caches\8.13\transforms\9909882e73f4e6139fa7449df7c46b62\transformed\core-1.10.1\AndroidManifest.xml:22:5-24:47
+15        android:name="com.example.dive.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+15-->[androidx.core:core:1.10.1] C:\Users\roina\.gradle\caches\8.13\transforms\9909882e73f4e6139fa7449df7c46b62\transformed\core-1.10.1\AndroidManifest.xml:23:9-81
+16        android:protectionLevel="signature" />
+16-->[androidx.core:core:1.10.1] C:\Users\roina\.gradle\caches\8.13\transforms\9909882e73f4e6139fa7449df7c46b62\transformed\core-1.10.1\AndroidManifest.xml:24:9-44
+17
+18    <uses-permission android:name="com.example.dive.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+18-->[androidx.core:core:1.10.1] C:\Users\roina\.gradle\caches\8.13\transforms\9909882e73f4e6139fa7449df7c46b62\transformed\core-1.10.1\AndroidManifest.xml:26:5-97
+18-->[androidx.core:core:1.10.1] C:\Users\roina\.gradle\caches\8.13\transforms\9909882e73f4e6139fa7449df7c46b62\transformed\core-1.10.1\AndroidManifest.xml:26:22-94
+19
+20    <application
+20-->C:\Users\roina\AndroidStudioProjects\Dive\mobile\src\main\AndroidManifest.xml:7:5-45:19
+21        android:allowBackup="true"
+21-->C:\Users\roina\AndroidStudioProjects\Dive\mobile\src\main\AndroidManifest.xml:8:9-35
+22        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+22-->[androidx.core:core:1.10.1] C:\Users\roina\.gradle\caches\8.13\transforms\9909882e73f4e6139fa7449df7c46b62\transformed\core-1.10.1\AndroidManifest.xml:28:18-86
+23        android:debuggable="true"
+24        android:extractNativeLibs="false"
+25        android:label="@string/app_name"
+25-->C:\Users\roina\AndroidStudioProjects\Dive\mobile\src\main\AndroidManifest.xml:9:9-41
+26        android:theme="@android:style/Theme.Material.Light" >
+26-->C:\Users\roina\AndroidStudioProjects\Dive\mobile\src\main\AndroidManifest.xml:10:9-60
+27
+28        <!-- 최초 1회 실행되어야 데이터 레이어 수신이 활성화됩니다. -->
+29        <activity
+29-->C:\Users\roina\AndroidStudioProjects\Dive\mobile\src\main\AndroidManifest.xml:13:9-20:20
+30            android:name="com.example.dive.mobile.MainActivity"
+30-->C:\Users\roina\AndroidStudioProjects\Dive\mobile\src\main\AndroidManifest.xml:14:13-41
+31            android:exported="true" >
+31-->C:\Users\roina\AndroidStudioProjects\Dive\mobile\src\main\AndroidManifest.xml:15:13-36
+32            <intent-filter>
+32-->C:\Users\roina\AndroidStudioProjects\Dive\mobile\src\main\AndroidManifest.xml:16:13-19:29
+33                <action android:name="android.intent.action.MAIN" />
+33-->C:\Users\roina\AndroidStudioProjects\Dive\mobile\src\main\AndroidManifest.xml:17:17-69
+33-->C:\Users\roina\AndroidStudioProjects\Dive\mobile\src\main\AndroidManifest.xml:17:25-66
+34
+35                <category android:name="android.intent.category.LAUNCHER" />
+35-->C:\Users\roina\AndroidStudioProjects\Dive\mobile\src\main\AndroidManifest.xml:18:17-77
+35-->C:\Users\roina\AndroidStudioProjects\Dive\mobile\src\main\AndroidManifest.xml:18:27-74
+36            </intent-filter>
+37        </activity>
+38
+39        <!-- 워치에서 보낸 리포트 채널 수신 -->
+40        <service
+40-->C:\Users\roina\AndroidStudioProjects\Dive\mobile\src\main\AndroidManifest.xml:23:9-33:19
+41            android:name="com.example.dive.mobile.ReportReceiverService"
+41-->C:\Users\roina\AndroidStudioProjects\Dive\mobile\src\main\AndroidManifest.xml:24:13-50
+42            android:exported="true" >
+42-->C:\Users\roina\AndroidStudioProjects\Dive\mobile\src\main\AndroidManifest.xml:25:13-36
+43            <intent-filter>
+43-->C:\Users\roina\AndroidStudioProjects\Dive\mobile\src\main\AndroidManifest.xml:26:13-32:29
+44                <action android:name="com.google.android.gms.wearable.CHANNEL_EVENT" />
+44-->C:\Users\roina\AndroidStudioProjects\Dive\mobile\src\main\AndroidManifest.xml:27:17-88
+44-->C:\Users\roina\AndroidStudioProjects\Dive\mobile\src\main\AndroidManifest.xml:27:25-85
+45
+46                <data
+46-->C:\Users\roina\AndroidStudioProjects\Dive\mobile\src\main\AndroidManifest.xml:28:17-31:57
+47                    android:host="*"
+47-->C:\Users\roina\AndroidStudioProjects\Dive\mobile\src\main\AndroidManifest.xml:30:21-37
+48                    android:pathPrefix="/dive-report"
+48-->C:\Users\roina\AndroidStudioProjects\Dive\mobile\src\main\AndroidManifest.xml:31:21-54
+49                    android:scheme="wear" />
+49-->C:\Users\roina\AndroidStudioProjects\Dive\mobile\src\main\AndroidManifest.xml:29:21-42
+50            </intent-filter>
+51        </service>
+52
+53        <!-- 수신한 HTML을 브라우저로 열기 위한 FileProvider -->
+54        <provider
+55            android:name="androidx.core.content.FileProvider"
+55-->C:\Users\roina\AndroidStudioProjects\Dive\mobile\src\main\AndroidManifest.xml:37:13-62
+56            android:authorities="com.example.dive.fileprovider"
+56-->C:\Users\roina\AndroidStudioProjects\Dive\mobile\src\main\AndroidManifest.xml:38:13-64
+57            android:exported="false"
+57-->C:\Users\roina\AndroidStudioProjects\Dive\mobile\src\main\AndroidManifest.xml:39:13-37
+58            android:grantUriPermissions="true" >
+58-->C:\Users\roina\AndroidStudioProjects\Dive\mobile\src\main\AndroidManifest.xml:40:13-47
+59            <meta-data
+59-->C:\Users\roina\AndroidStudioProjects\Dive\mobile\src\main\AndroidManifest.xml:41:13-43:54
+60                android:name="android.support.FILE_PROVIDER_PATHS"
+60-->C:\Users\roina\AndroidStudioProjects\Dive\mobile\src\main\AndroidManifest.xml:42:17-67
+61                android:resource="@xml/file_paths" />
+61-->C:\Users\roina\AndroidStudioProjects\Dive\mobile\src\main\AndroidManifest.xml:43:17-51
+62        </provider>
+63
+64        <activity
+64-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\roina\.gradle\caches\8.13\transforms\8ff76422cc7699de110d84644cdd615b\transformed\play-services-auth-20.7.0\AndroidManifest.xml:23:9-27:75
+65            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+65-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\roina\.gradle\caches\8.13\transforms\8ff76422cc7699de110d84644cdd615b\transformed\play-services-auth-20.7.0\AndroidManifest.xml:24:13-93
+66            android:excludeFromRecents="true"
+66-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\roina\.gradle\caches\8.13\transforms\8ff76422cc7699de110d84644cdd615b\transformed\play-services-auth-20.7.0\AndroidManifest.xml:25:13-46
+67            android:exported="false"
+67-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\roina\.gradle\caches\8.13\transforms\8ff76422cc7699de110d84644cdd615b\transformed\play-services-auth-20.7.0\AndroidManifest.xml:26:13-37
+68            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+68-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\roina\.gradle\caches\8.13\transforms\8ff76422cc7699de110d84644cdd615b\transformed\play-services-auth-20.7.0\AndroidManifest.xml:27:13-72
+69        <!--
+70            Service handling Google Sign-In user revocation. For apps that do not integrate with
+71            Google Sign-In, this service will never be started.
+72        -->
+73        <service
+73-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\roina\.gradle\caches\8.13\transforms\8ff76422cc7699de110d84644cdd615b\transformed\play-services-auth-20.7.0\AndroidManifest.xml:33:9-37:51
+74            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+74-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\roina\.gradle\caches\8.13\transforms\8ff76422cc7699de110d84644cdd615b\transformed\play-services-auth-20.7.0\AndroidManifest.xml:34:13-89
+75            android:exported="true"
+75-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\roina\.gradle\caches\8.13\transforms\8ff76422cc7699de110d84644cdd615b\transformed\play-services-auth-20.7.0\AndroidManifest.xml:35:13-36
+76            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"
+76-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\roina\.gradle\caches\8.13\transforms\8ff76422cc7699de110d84644cdd615b\transformed\play-services-auth-20.7.0\AndroidManifest.xml:36:13-107
+77            android:visibleToInstantApps="true" />
+77-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\roina\.gradle\caches\8.13\transforms\8ff76422cc7699de110d84644cdd615b\transformed\play-services-auth-20.7.0\AndroidManifest.xml:37:13-48
+78
+79        <activity
+79-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\roina\.gradle\caches\8.13\transforms\90803581887c040358eda7e49af1ccdf\transformed\play-services-base-18.0.1\AndroidManifest.xml:20:9-22:45
+80            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+80-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\roina\.gradle\caches\8.13\transforms\90803581887c040358eda7e49af1ccdf\transformed\play-services-base-18.0.1\AndroidManifest.xml:20:19-85
+81            android:exported="false"
+81-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\roina\.gradle\caches\8.13\transforms\90803581887c040358eda7e49af1ccdf\transformed\play-services-base-18.0.1\AndroidManifest.xml:22:19-43
+82            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+82-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\roina\.gradle\caches\8.13\transforms\90803581887c040358eda7e49af1ccdf\transformed\play-services-base-18.0.1\AndroidManifest.xml:21:19-78
+83
+84        <meta-data
+84-->[com.google.android.gms:play-services-basement:18.2.0] C:\Users\roina\.gradle\caches\8.13\transforms\178f8a1ff4447a3568f121cd7adf33a3\transformed\play-services-basement-18.2.0\AndroidManifest.xml:21:9-23:69
+85            android:name="com.google.android.gms.version"
+85-->[com.google.android.gms:play-services-basement:18.2.0] C:\Users\roina\.gradle\caches\8.13\transforms\178f8a1ff4447a3568f121cd7adf33a3\transformed\play-services-basement-18.2.0\AndroidManifest.xml:22:13-58
+86            android:value="@integer/google_play_services_version" />
+86-->[com.google.android.gms:play-services-basement:18.2.0] C:\Users\roina\.gradle\caches\8.13\transforms\178f8a1ff4447a3568f121cd7adf33a3\transformed\play-services-basement-18.2.0\AndroidManifest.xml:23:13-66
+87    </application>
+88
+89</manifest>

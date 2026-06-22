@@ -1,20 +1,20 @@
 -- Merging decision tree log ---
 provider#androidx.core.content.FileProvider
-INJECTED from C:\Users\roina\AndroidStudioProjects\Dive\mobile\src\main\AndroidManifest.xml:35:9-43:20
+INJECTED from C:\Users\roina\AndroidStudioProjects\Dive\mobile\src\main\AndroidManifest.xml:36:9-44:20
 	android:grantUriPermissions
-		ADDED from C:\Users\roina\AndroidStudioProjects\Dive\mobile\src\main\AndroidManifest.xml:39:13-47
+		ADDED from C:\Users\roina\AndroidStudioProjects\Dive\mobile\src\main\AndroidManifest.xml:40:13-47
 	android:authorities
 		INJECTED from C:\Users\roina\AndroidStudioProjects\Dive\mobile\src\main\AndroidManifest.xml
-		ADDED from C:\Users\roina\AndroidStudioProjects\Dive\mobile\src\main\AndroidManifest.xml:37:13-64
+		ADDED from C:\Users\roina\AndroidStudioProjects\Dive\mobile\src\main\AndroidManifest.xml:38:13-64
 	android:exported
-		ADDED from C:\Users\roina\AndroidStudioProjects\Dive\mobile\src\main\AndroidManifest.xml:38:13-37
+		ADDED from C:\Users\roina\AndroidStudioProjects\Dive\mobile\src\main\AndroidManifest.xml:39:13-37
 	android:name
-		ADDED from C:\Users\roina\AndroidStudioProjects\Dive\mobile\src\main\AndroidManifest.xml:36:13-62
+		ADDED from C:\Users\roina\AndroidStudioProjects\Dive\mobile\src\main\AndroidManifest.xml:37:13-62
 manifest
-ADDED from C:\Users\roina\AndroidStudioProjects\Dive\mobile\src\main\AndroidManifest.xml:2:1-45:12
-INJECTED from C:\Users\roina\AndroidStudioProjects\Dive\mobile\src\main\AndroidManifest.xml:2:1-45:12
-INJECTED from C:\Users\roina\AndroidStudioProjects\Dive\mobile\src\main\AndroidManifest.xml:2:1-45:12
-INJECTED from C:\Users\roina\AndroidStudioProjects\Dive\mobile\src\main\AndroidManifest.xml:2:1-45:12
+ADDED from C:\Users\roina\AndroidStudioProjects\Dive\mobile\src\main\AndroidManifest.xml:2:1-46:12
+INJECTED from C:\Users\roina\AndroidStudioProjects\Dive\mobile\src\main\AndroidManifest.xml:2:1-46:12
+INJECTED from C:\Users\roina\AndroidStudioProjects\Dive\mobile\src\main\AndroidManifest.xml:2:1-46:12
+INJECTED from C:\Users\roina\AndroidStudioProjects\Dive\mobile\src\main\AndroidManifest.xml:2:1-46:12
 MERGED from [com.google.android.gms:play-services-wearable:18.0.0] C:\Users\roina\.gradle\caches\8.13\transforms\45033428ddda17fa36bd083e326f692d\transformed\play-services-wearable-18.0.0\AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.android.gms:play-services-auth:20.7.0] C:\Users\roina\.gradle\caches\8.13\transforms\8ff76422cc7699de110d84644cdd615b\transformed\play-services-auth-20.7.0\AndroidManifest.xml:17:1-40:12
 MERGED from [com.google.android.gms:play-services-auth-api-phone:18.0.1] C:\Users\roina\.gradle\caches\8.13\transforms\54cca910c2665f0840358a88611c525d\transformed\play-services-auth-api-phone-18.0.1\AndroidManifest.xml:2:1-7:12
@@ -56,13 +56,17 @@ MERGED from [androidx.print:print:1.0.0] C:\Users\roina\.gradle\caches\8.13\tran
 		INJECTED from C:\Users\roina\AndroidStudioProjects\Dive\mobile\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\Users\roina\AndroidStudioProjects\Dive\mobile\src\main\AndroidManifest.xml:2:11-69
-uses-permission#android.permission.POST_NOTIFICATIONS
-ADDED from C:\Users\roina\AndroidStudioProjects\Dive\mobile\src\main\AndroidManifest.xml:4:5-77
+uses-permission#android.permission.INTERNET
+ADDED from C:\Users\roina\AndroidStudioProjects\Dive\mobile\src\main\AndroidManifest.xml:4:5-67
 	android:name
-		ADDED from C:\Users\roina\AndroidStudioProjects\Dive\mobile\src\main\AndroidManifest.xml:4:22-74
+		ADDED from C:\Users\roina\AndroidStudioProjects\Dive\mobile\src\main\AndroidManifest.xml:4:22-64
+uses-permission#android.permission.POST_NOTIFICATIONS
+ADDED from C:\Users\roina\AndroidStudioProjects\Dive\mobile\src\main\AndroidManifest.xml:5:5-77
+	android:name
+		ADDED from C:\Users\roina\AndroidStudioProjects\Dive\mobile\src\main\AndroidManifest.xml:5:22-74
 application
-ADDED from C:\Users\roina\AndroidStudioProjects\Dive\mobile\src\main\AndroidManifest.xml:6:5-44:19
-INJECTED from C:\Users\roina\AndroidStudioProjects\Dive\mobile\src\main\AndroidManifest.xml:6:5-44:19
+ADDED from C:\Users\roina\AndroidStudioProjects\Dive\mobile\src\main\AndroidManifest.xml:7:5-45:19
+INJECTED from C:\Users\roina\AndroidStudioProjects\Dive\mobile\src\main\AndroidManifest.xml:7:5-45:19
 MERGED from [com.google.android.gms:play-services-wearable:18.0.0] C:\Users\roina\.gradle\caches\8.13\transforms\45033428ddda17fa36bd083e326f692d\transformed\play-services-wearable-18.0.0\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.gms:play-services-wearable:18.0.0] C:\Users\roina\.gradle\caches\8.13\transforms\45033428ddda17fa36bd083e326f692d\transformed\play-services-wearable-18.0.0\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.gms:play-services-auth:20.7.0] C:\Users\roina\.gradle\caches\8.13\transforms\8ff76422cc7699de110d84644cdd615b\transformed\play-services-auth-20.7.0\AndroidManifest.xml:22:5-38:19
@@ -84,53 +88,53 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\ro
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.10.1] C:\Users\roina\.gradle\caches\8.13\transforms\9909882e73f4e6139fa7449df7c46b62\transformed\core-1.10.1\AndroidManifest.xml:28:18-86
 	android:label
-		ADDED from C:\Users\roina\AndroidStudioProjects\Dive\mobile\src\main\AndroidManifest.xml:8:9-41
+		ADDED from C:\Users\roina\AndroidStudioProjects\Dive\mobile\src\main\AndroidManifest.xml:9:9-41
 	android:allowBackup
-		ADDED from C:\Users\roina\AndroidStudioProjects\Dive\mobile\src\main\AndroidManifest.xml:7:9-35
+		ADDED from C:\Users\roina\AndroidStudioProjects\Dive\mobile\src\main\AndroidManifest.xml:8:9-35
 	android:theme
-		ADDED from C:\Users\roina\AndroidStudioProjects\Dive\mobile\src\main\AndroidManifest.xml:9:9-60
+		ADDED from C:\Users\roina\AndroidStudioProjects\Dive\mobile\src\main\AndroidManifest.xml:10:9-60
 activity#com.example.dive.mobile.MainActivity
-ADDED from C:\Users\roina\AndroidStudioProjects\Dive\mobile\src\main\AndroidManifest.xml:12:9-19:20
+ADDED from C:\Users\roina\AndroidStudioProjects\Dive\mobile\src\main\AndroidManifest.xml:13:9-20:20
 	android:exported
-		ADDED from C:\Users\roina\AndroidStudioProjects\Dive\mobile\src\main\AndroidManifest.xml:14:13-36
+		ADDED from C:\Users\roina\AndroidStudioProjects\Dive\mobile\src\main\AndroidManifest.xml:15:13-36
 	android:name
-		ADDED from C:\Users\roina\AndroidStudioProjects\Dive\mobile\src\main\AndroidManifest.xml:13:13-41
+		ADDED from C:\Users\roina\AndroidStudioProjects\Dive\mobile\src\main\AndroidManifest.xml:14:13-41
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\roina\AndroidStudioProjects\Dive\mobile\src\main\AndroidManifest.xml:15:13-18:29
+ADDED from C:\Users\roina\AndroidStudioProjects\Dive\mobile\src\main\AndroidManifest.xml:16:13-19:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\roina\AndroidStudioProjects\Dive\mobile\src\main\AndroidManifest.xml:16:17-69
+ADDED from C:\Users\roina\AndroidStudioProjects\Dive\mobile\src\main\AndroidManifest.xml:17:17-69
 	android:name
-		ADDED from C:\Users\roina\AndroidStudioProjects\Dive\mobile\src\main\AndroidManifest.xml:16:25-66
+		ADDED from C:\Users\roina\AndroidStudioProjects\Dive\mobile\src\main\AndroidManifest.xml:17:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\roina\AndroidStudioProjects\Dive\mobile\src\main\AndroidManifest.xml:17:17-77
+ADDED from C:\Users\roina\AndroidStudioProjects\Dive\mobile\src\main\AndroidManifest.xml:18:17-77
 	android:name
-		ADDED from C:\Users\roina\AndroidStudioProjects\Dive\mobile\src\main\AndroidManifest.xml:17:27-74
+		ADDED from C:\Users\roina\AndroidStudioProjects\Dive\mobile\src\main\AndroidManifest.xml:18:27-74
 service#com.example.dive.mobile.ReportReceiverService
-ADDED from C:\Users\roina\AndroidStudioProjects\Dive\mobile\src\main\AndroidManifest.xml:22:9-32:19
+ADDED from C:\Users\roina\AndroidStudioProjects\Dive\mobile\src\main\AndroidManifest.xml:23:9-33:19
 	android:exported
-		ADDED from C:\Users\roina\AndroidStudioProjects\Dive\mobile\src\main\AndroidManifest.xml:24:13-36
+		ADDED from C:\Users\roina\AndroidStudioProjects\Dive\mobile\src\main\AndroidManifest.xml:25:13-36
 	android:name
-		ADDED from C:\Users\roina\AndroidStudioProjects\Dive\mobile\src\main\AndroidManifest.xml:23:13-50
+		ADDED from C:\Users\roina\AndroidStudioProjects\Dive\mobile\src\main\AndroidManifest.xml:24:13-50
 intent-filter#action:name:com.google.android.gms.wearable.CHANNEL_EVENT+data:host:*+data:pathPrefix:/dive-report+data:scheme:wear
-ADDED from C:\Users\roina\AndroidStudioProjects\Dive\mobile\src\main\AndroidManifest.xml:25:13-31:29
+ADDED from C:\Users\roina\AndroidStudioProjects\Dive\mobile\src\main\AndroidManifest.xml:26:13-32:29
 action#com.google.android.gms.wearable.CHANNEL_EVENT
-ADDED from C:\Users\roina\AndroidStudioProjects\Dive\mobile\src\main\AndroidManifest.xml:26:17-88
+ADDED from C:\Users\roina\AndroidStudioProjects\Dive\mobile\src\main\AndroidManifest.xml:27:17-88
 	android:name
-		ADDED from C:\Users\roina\AndroidStudioProjects\Dive\mobile\src\main\AndroidManifest.xml:26:25-85
+		ADDED from C:\Users\roina\AndroidStudioProjects\Dive\mobile\src\main\AndroidManifest.xml:27:25-85
 data
-ADDED from C:\Users\roina\AndroidStudioProjects\Dive\mobile\src\main\AndroidManifest.xml:27:17-30:57
+ADDED from C:\Users\roina\AndroidStudioProjects\Dive\mobile\src\main\AndroidManifest.xml:28:17-31:57
 	android:host
-		ADDED from C:\Users\roina\AndroidStudioProjects\Dive\mobile\src\main\AndroidManifest.xml:29:21-37
+		ADDED from C:\Users\roina\AndroidStudioProjects\Dive\mobile\src\main\AndroidManifest.xml:30:21-37
 	android:scheme
-		ADDED from C:\Users\roina\AndroidStudioProjects\Dive\mobile\src\main\AndroidManifest.xml:28:21-42
+		ADDED from C:\Users\roina\AndroidStudioProjects\Dive\mobile\src\main\AndroidManifest.xml:29:21-42
 	android:pathPrefix
-		ADDED from C:\Users\roina\AndroidStudioProjects\Dive\mobile\src\main\AndroidManifest.xml:30:21-54
+		ADDED from C:\Users\roina\AndroidStudioProjects\Dive\mobile\src\main\AndroidManifest.xml:31:21-54
 meta-data#android.support.FILE_PROVIDER_PATHS
-ADDED from C:\Users\roina\AndroidStudioProjects\Dive\mobile\src\main\AndroidManifest.xml:40:13-42:54
+ADDED from C:\Users\roina\AndroidStudioProjects\Dive\mobile\src\main\AndroidManifest.xml:41:13-43:54
 	android:resource
-		ADDED from C:\Users\roina\AndroidStudioProjects\Dive\mobile\src\main\AndroidManifest.xml:42:17-51
+		ADDED from C:\Users\roina\AndroidStudioProjects\Dive\mobile\src\main\AndroidManifest.xml:43:17-51
 	android:name
-		ADDED from C:\Users\roina\AndroidStudioProjects\Dive\mobile\src\main\AndroidManifest.xml:41:17-67
+		ADDED from C:\Users\roina\AndroidStudioProjects\Dive\mobile\src\main\AndroidManifest.xml:42:17-67
 uses-sdk
 INJECTED from C:\Users\roina\AndroidStudioProjects\Dive\mobile\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\roina\AndroidStudioProjects\Dive\mobile\src\main\AndroidManifest.xml

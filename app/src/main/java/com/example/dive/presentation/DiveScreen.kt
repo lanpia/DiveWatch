@@ -1,5 +1,7 @@
 package com.example.dive.presentation
 
+import android.content.Context
+import android.os.PowerManager
 import androidx.activity.compose.BackHandler
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer
@@ -21,6 +23,7 @@ import androidx.wear.compose.material.Scaffold
 import androidx.wear.compose.material.Text
 import com.example.dive.data.DiveLogRepository
 import com.example.dive.deco.DecoModel
+import com.example.dive.location.LocationHelper
 import com.example.dive.model.DiveLog
 import com.example.dive.model.DiveMode
 import com.example.dive.model.DiveSample
@@ -63,6 +66,8 @@ fun DiveScreen(
     var diveStartMs by remember { mutableStateOf(0L) }
     var elapsedSec by remember { mutableStateOf(0L) }
     var maxDepth by remember { mutableStateOf(0f) }
+    var avgDepth by remember { mutableStateOf(0f) }
+    var depthSum by remember { mutableStateOf(0.0) }
     val samples = remember { mutableStateListOf<DiveSample>() }
     var lastSampleSec by remember { mutableStateOf(-1L) }
     var surfaceSinceMs by remember { mutableStateOf(0L) }
@@ -70,6 +75,9 @@ fun DiveScreen(
     // 세션(이번 화면 방문 동안의 다이브들)
     val sessionStartMs = remember { System.currentTimeMillis() }
     val sessionDives = remember { mutableStateListOf<DiveLog>() }
+    var diveLat by remember { mutableStateOf<Double?>(null) }
+    var diveLng by remember { mutableStateOf<Double?>(null) }
+    var divePlace by remember { mutableStateOf<String?>(null) }
 
     // 상승 속도(스쿠버)
     val rateWindow = remember { ArrayDeque<Pair<Long, Float>>() }
@@ -123,6 +131,8 @@ fun DiveScreen(
         diveStartMs = now
         elapsedSec = 0
         maxDepth = depth
+        avgDepth = depth
+        depthSum = 0.0
         samples.clear()
         lastSampleSec = -1L
         surfaceSinceMs = 0L
@@ -147,7 +157,10 @@ fun DiveScreen(
                     mode = mode,
                     startTime = sessionStartMs,
                     endTime = System.currentTimeMillis(),
-                    dives = sessionDives.toList()
+                    dives = sessionDives.toList(),
+                    latitude = diveLat,
+                    longitude = diveLng,
+                    placeName = divePlace
                 )
             )
         }
@@ -168,6 +181,8 @@ fun DiveScreen(
         if (sec != lastSampleSec) {
             samples.add(DiveSample(timeSec = sec, depth = depth))
             lastSampleSec = sec
+            depthSum += depth
+            avgDepth = (depthSum / samples.size).toFloat()
 
             // 스쿠버: 1초 단위로 질소 부하/NDL 갱신
             if (mode == DiveMode.SCUBA) {
@@ -206,11 +221,33 @@ fun DiveScreen(
     val diveCount = sessionDives.size
     val lastDive = sessionDives.lastOrNull()
 
-    // 센서 콜백 연결 + 진입 시 수면 기준 보정
+    // 센서 콜백 연결 + 진입 시 수면 기준 보정 + 다이브 동안 CPU 깨움 유지
     DisposableEffect(Unit) {
         sensorManager.requestCalibration()
         sensorManager.onDepthChanged = { d -> handleDepth(d) }
-        onDispose { sensorManager.onDepthChanged = {} }
+
+        // 화면이 잠시 꺼져도 기록(센서 샘플링)이 끊기지 않도록 CPU 깨움 유지
+        val powerManager = context.getSystemService(Context.POWER_SERVICE) as PowerManager
+        val wakeLock = powerManager.newWakeLock(PowerManager.PARTIAL_WAKE_LOCK, "Dive:recording")
+        @Suppress("WakelockTimeout")
+        wakeLock.acquire(3 * 60 * 60 * 1000L) // 최대 3시간 안전 타임아웃
+
+        onDispose {
+            sensorManager.onDepthChanged = {}
+            if (wakeLock.isHeld) wakeLock.release()
+        }
+    }
+
+    // 진입(수면) 시 GPS 위치 1회 기록 + 장소명 역지오코딩
+    LaunchedEffect(Unit) {
+        if (LocationHelper.hasPermission(context)) {
+            val loc = LocationHelper.currentLocation(context)
+            if (loc != null) {
+                diveLat = loc.first
+                diveLng = loc.second
+                divePlace = LocationHelper.placeName(context, loc.first, loc.second)
+            }
+        }
     }
 
     // 다이브 경과 시간
@@ -288,7 +325,7 @@ fun DiveScreen(
             Text(text = modeLabel(mode), fontSize = 14.sp, fontWeight = FontWeight.Bold)
 
             if (diving) {
-                DiveInfoPanel(depth = currentDepth, maxDepth = maxDepth, elapsedSec = elapsedSec)
+                DiveInfoPanel(depth = currentDepth, maxDepth = maxDepth, avgDepth = avgDepth, elapsedSec = elapsedSec)
 
                 if (mode == DiveMode.SCUBA) {
                     Text(
@@ -344,6 +381,18 @@ fun DiveScreen(
                     fontSize = 12.sp,
                     textAlign = TextAlign.Center
                 )
+                Text(
+                    text = "💧 워터락을 켜두면 오작동·화면꺼짐 방지",
+                    fontSize = 10.sp,
+                    color = Color(0xFF4FC3F7),
+                    textAlign = TextAlign.Center
+                )
+                val place = divePlace
+                if (place != null) {
+                    Text(text = "📍 $place", fontSize = 10.sp, textAlign = TextAlign.Center)
+                } else if (diveLat != null) {
+                    Text(text = "📍 위치 기록됨", fontSize = 10.sp, textAlign = TextAlign.Center)
+                }
                 if (mode == DiveMode.FREEDIVING && diveCount > 0) {
                     Spacer(Modifier.height(4.dp))
                     Text(text = "다이브 ${diveCount}회", fontSize = 13.sp)

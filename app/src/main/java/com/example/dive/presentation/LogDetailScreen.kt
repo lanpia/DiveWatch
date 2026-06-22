@@ -1,6 +1,10 @@
 package com.example.dive.presentation
 
+import android.app.Activity
+import android.content.Intent
 import androidx.activity.compose.BackHandler
+import androidx.activity.compose.rememberLauncherForActivityResult
+import androidx.activity.result.contract.ActivityResultContracts
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
@@ -18,17 +22,19 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.wear.compose.material.Chip
 import androidx.wear.compose.material.ChipDefaults
 import androidx.wear.compose.material.Scaffold
 import androidx.wear.compose.material.Text
+import com.example.dive.PlaceInputActivity
 import com.example.dive.data.DiveLogRepository
 import com.example.dive.model.DiveMode
 import com.example.dive.model.DiveSession
 
-/** 단일 다이브 세션 상세 */
+/** 단일 다이브 세션 상세 (+ 위치 수정 / 삭제) */
 @Composable
 fun LogDetailScreen(
     session: DiveSession,
@@ -37,7 +43,21 @@ fun LogDetailScreen(
 ) {
     BackHandler { onBack() }
 
+    val context = LocalContext.current
+    var place by remember { mutableStateOf(session.placeName) }
     var confirmDelete by remember { mutableStateOf(false) }
+
+    val placeLauncher = rememberLauncherForActivityResult(
+        ActivityResultContracts.StartActivityForResult()
+    ) { result ->
+        if (result.resultCode == Activity.RESULT_OK) {
+            val text = result.data?.getStringExtra(PlaceInputActivity.EXTRA_RESULT)?.trim()
+            if (!text.isNullOrEmpty()) {
+                place = text
+                repository.update(session.copy(placeName = text))
+            }
+        }
+    }
 
     Scaffold {
         Column(
@@ -49,7 +69,28 @@ fun LogDetailScreen(
         ) {
             Text(text = modeLabel(session.mode), fontSize = 15.sp, fontWeight = FontWeight.Bold)
             Text(text = formatDate(session.startTime), fontSize = 12.sp)
-            Spacer(Modifier.height(4.dp))
+
+            val p = place
+            val lat = session.latitude
+            val lng = session.longitude
+            when {
+                p != null -> Text(text = "📍 $p", fontSize = 11.sp)
+                lat != null && lng != null ->
+                    Text(text = "📍 %.4f, %.4f".format(lat, lng), fontSize = 11.sp)
+                else -> Text(text = "📍 위치 없음", fontSize = 11.sp, color = Color(0xFF9BBCCB))
+            }
+            Chip(
+                modifier = Modifier.fillMaxWidth(),
+                onClick = {
+                    val intent = Intent(context, PlaceInputActivity::class.java)
+                        .putExtra(PlaceInputActivity.EXTRA_INITIAL, place ?: "")
+                    placeLauncher.launch(intent)
+                },
+                label = { Text("위치 입력/수정", fontSize = 12.sp) },
+                colors = ChipDefaults.secondaryChipColors()
+            )
+
+            Spacer(Modifier.height(6.dp))
 
             if (session.mode == DiveMode.SCUBA) {
                 val dive = session.dives.firstOrNull()
@@ -92,7 +133,7 @@ fun LogDetailScreen(
                 },
                 label = {
                     Text(
-                        text = if (confirmDelete) "한 번 더 누르면 삭제" else "삭제",
+                        text = if (confirmDelete) "한 번 더 누르면 삭제" else "이 로그 삭제",
                         color = Color.Red
                     )
                 },

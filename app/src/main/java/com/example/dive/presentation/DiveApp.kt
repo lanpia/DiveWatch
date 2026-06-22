@@ -39,6 +39,7 @@ fun DiveApp(sensorManager: PressureSensorManager) {
 
     when (val current = screen) {
         is Screen.ModeSelect -> ModeSelectScreen(
+            repository = repository,
             waterType = waterType,
             onToggleWater = {
                 val next = if (waterType == WaterType.SEA) WaterType.FRESH else WaterType.SEA

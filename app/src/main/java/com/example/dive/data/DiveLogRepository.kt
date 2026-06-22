@@ -33,6 +33,16 @@ class DiveLogRepository(context: Context) {
         write(all)
     }
 
+    /** 같은 id의 세션을 교체(위치 수정 등) */
+    fun update(session: DiveSession) {
+        val all = loadAll().toMutableList()
+        val idx = all.indexOfFirst { it.id == session.id }
+        if (idx >= 0) {
+            all[idx] = session
+            write(all)
+        }
+    }
+
     fun delete(id: Long) = write(loadAll().filterNot { it.id == id })
 
     fun deleteAll() = write(emptyList())
