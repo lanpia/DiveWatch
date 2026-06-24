@@ -16,6 +16,18 @@ data class DiveSample(
     val depth: Float     // 수심(m)
 )
 
+/**
+ * 체온(피부온도) 측정 1포인트. 세션 동안 1분마다 측정한다.
+ * - timeSec: 세션 시작 후 경과 시간(초)
+ * - skin: 손목 피부온도(℃), ambient: 주변온도(℃)
+ */
+@Serializable
+data class TempReading(
+    val timeSec: Long,
+    val skin: Float,
+    val ambient: Float
+)
+
 /** 완료된 다이브 1회 기록 */
 @Serializable
 data class DiveLog(

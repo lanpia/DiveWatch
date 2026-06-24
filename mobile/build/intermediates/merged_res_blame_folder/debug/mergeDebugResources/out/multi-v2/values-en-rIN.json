@@ -4,7 +4,7 @@
             "outputFile": "com.example.dive.mobile-mergeDebugResources-10:/values-en-rIN/values-en-rIN.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\roina\\.gradle\\caches\\8.13\\transforms\\9909882e73f4e6139fa7449df7c46b62\\transformed\\core-1.10.1\\res\\values-en-rIN\\values-en-rIN.xml",
+                    "source": "C:\\Users\\roina\\.gradle\\caches\\8.13\\transforms\\e8bc455d7ab53c9768f09f9450795f68\\transformed\\core-1.10.1\\res\\values-en-rIN\\values-en-rIN.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9",
                         "startColumns": "4,4,4,4,4,4,4,4",

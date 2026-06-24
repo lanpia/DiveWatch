@@ -21,7 +21,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\roina\\.gradle\\caches\\8.13\\transforms\\90803581887c040358eda7e49af1ccdf\\transformed\\play-services-base-18.0.1\\res\\values\\values.xml",
+                    "source": "C:\\Users\\roina\\.gradle\\caches\\8.13\\transforms\\f4d462d1ca8d4912ae5c5cd7071960f0\\transformed\\play-services-base-18.0.1\\res\\values\\values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8,9,10,11,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,33,46",
                         "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
@@ -37,23 +37,6 @@
                         "endLines": "11,12,13,14,15,16,17,18,107,108,109,110,111,112,113,114,116,117,118,119,120,121,122,123,124,353,372",
                         "endColumns": "89,79,89,89,79,80,79,79,104,180,124,106,179,122,115,102,187,104,180,124,174,147,62,61,78,20,20",
                         "endOffsets": "716,796,886,976,1056,1137,1217,1297,6791,6972,7097,7204,7384,7507,7623,7726,8081,8186,8367,8492,8667,8815,8878,8940,9019,18939,19356"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\roina\\.gradle\\caches\\8.13\\transforms\\178f8a1ff4447a3568f121cd7adf33a3\\transformed\\play-services-basement-18.2.0\\res\\values\\values.xml",
-                    "from": {
-                        "startLines": "4,7",
-                        "startColumns": "0,0",
-                        "startOffsets": "243,406",
-                        "endColumns": "63,166",
-                        "endOffsets": "306,572"
-                    },
-                    "to": {
-                        "startLines": "97,115",
-                        "startColumns": "4,4",
-                        "startOffsets": "5995,7731",
-                        "endColumns": "67,166",
-                        "endOffsets": "6058,7893"
                     }
                 },
                 {
@@ -76,7 +59,43 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\roina\\.gradle\\caches\\8.13\\transforms\\9909882e73f4e6139fa7449df7c46b62\\transformed\\core-1.10.1\\res\\values\\values.xml",
+                    "source": "C:\\Users\\roina\\.gradle\\caches\\8.13\\transforms\\f57c69727d3a86341b496a57728b7d69\\transformed\\coordinatorlayout-1.0.0\\res\\values\\values.xml",
+                    "from": {
+                        "startLines": "2,102,3,13",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,5935,116,724",
+                        "endLines": "2,104,12,101",
+                        "endColumns": "60,12,24,24",
+                        "endOffsets": "111,6075,719,5930"
+                    },
+                    "to": {
+                        "startLines": "5,139,158,164",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "219,9992,10641,10852",
+                        "endLines": "5,141,163,247",
+                        "endColumns": "60,12,24,24",
+                        "endOffsets": "275,10132,10847,15363"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\roina\\.gradle\\caches\\8.13\\transforms\\87ab4c07a2d125959b379976b7064fc9\\transformed\\lifecycle-runtime-2.3.1\\res\\values\\values.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "42",
+                        "endOffsets": "93"
+                    },
+                    "to": {
+                        "startLines": "96",
+                        "startColumns": "4",
+                        "startOffsets": "5952",
+                        "endColumns": "42",
+                        "endOffsets": "5990"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\roina\\.gradle\\caches\\8.13\\transforms\\e8bc455d7ab53c9768f09f9450795f68\\transformed\\core-1.10.1\\res\\values\\values.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,98,99,103,104,105,106,112,122,155,176,209",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -95,39 +114,20 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\roina\\.gradle\\caches\\8.13\\transforms\\34018173e14a108e88a78b1dae069868\\transformed\\lifecycle-runtime-2.3.1\\res\\values\\values.xml",
+                    "source": "C:\\Users\\roina\\.gradle\\caches\\8.13\\transforms\\bd1d7bd740188d620f25f1a84785096e\\transformed\\play-services-basement-18.2.0\\res\\values\\values.xml",
                     "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "42",
-                        "endOffsets": "93"
+                        "startLines": "4,7",
+                        "startColumns": "0,0",
+                        "startOffsets": "243,406",
+                        "endColumns": "63,166",
+                        "endOffsets": "306,572"
                     },
                     "to": {
-                        "startLines": "96",
-                        "startColumns": "4",
-                        "startOffsets": "5952",
-                        "endColumns": "42",
-                        "endOffsets": "5990"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\roina\\.gradle\\caches\\8.13\\transforms\\afe558bc4a773bcc453dc84e63c4e6a6\\transformed\\coordinatorlayout-1.0.0\\res\\values\\values.xml",
-                    "from": {
-                        "startLines": "2,102,3,13",
-                        "startColumns": "4,4,4,4",
-                        "startOffsets": "55,5935,116,724",
-                        "endLines": "2,104,12,101",
-                        "endColumns": "60,12,24,24",
-                        "endOffsets": "111,6075,719,5930"
-                    },
-                    "to": {
-                        "startLines": "5,139,158,164",
-                        "startColumns": "4,4,4,4",
-                        "startOffsets": "219,9992,10641,10852",
-                        "endLines": "5,141,163,247",
-                        "endColumns": "60,12,24,24",
-                        "endOffsets": "275,10132,10847,15363"
+                        "startLines": "97,115",
+                        "startColumns": "4,4",
+                        "startOffsets": "5995,7731",
+                        "endColumns": "67,166",
+                        "endOffsets": "6058,7893"
                     }
                 }
             ]

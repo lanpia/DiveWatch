@@ -16,22 +16,22 @@
 12-->C:\Users\roina\AndroidStudioProjects\Dive\mobile\src\main\AndroidManifest.xml:5:22-74
 13
 14    <permission
-14-->[androidx.core:core:1.10.1] C:\Users\roina\.gradle\caches\8.13\transforms\9909882e73f4e6139fa7449df7c46b62\transformed\core-1.10.1\AndroidManifest.xml:22:5-24:47
+14-->[androidx.core:core:1.10.1] C:\Users\roina\.gradle\caches\8.13\transforms\e8bc455d7ab53c9768f09f9450795f68\transformed\core-1.10.1\AndroidManifest.xml:22:5-24:47
 15        android:name="com.example.dive.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
-15-->[androidx.core:core:1.10.1] C:\Users\roina\.gradle\caches\8.13\transforms\9909882e73f4e6139fa7449df7c46b62\transformed\core-1.10.1\AndroidManifest.xml:23:9-81
+15-->[androidx.core:core:1.10.1] C:\Users\roina\.gradle\caches\8.13\transforms\e8bc455d7ab53c9768f09f9450795f68\transformed\core-1.10.1\AndroidManifest.xml:23:9-81
 16        android:protectionLevel="signature" />
-16-->[androidx.core:core:1.10.1] C:\Users\roina\.gradle\caches\8.13\transforms\9909882e73f4e6139fa7449df7c46b62\transformed\core-1.10.1\AndroidManifest.xml:24:9-44
+16-->[androidx.core:core:1.10.1] C:\Users\roina\.gradle\caches\8.13\transforms\e8bc455d7ab53c9768f09f9450795f68\transformed\core-1.10.1\AndroidManifest.xml:24:9-44
 17
 18    <uses-permission android:name="com.example.dive.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
-18-->[androidx.core:core:1.10.1] C:\Users\roina\.gradle\caches\8.13\transforms\9909882e73f4e6139fa7449df7c46b62\transformed\core-1.10.1\AndroidManifest.xml:26:5-97
-18-->[androidx.core:core:1.10.1] C:\Users\roina\.gradle\caches\8.13\transforms\9909882e73f4e6139fa7449df7c46b62\transformed\core-1.10.1\AndroidManifest.xml:26:22-94
+18-->[androidx.core:core:1.10.1] C:\Users\roina\.gradle\caches\8.13\transforms\e8bc455d7ab53c9768f09f9450795f68\transformed\core-1.10.1\AndroidManifest.xml:26:5-97
+18-->[androidx.core:core:1.10.1] C:\Users\roina\.gradle\caches\8.13\transforms\e8bc455d7ab53c9768f09f9450795f68\transformed\core-1.10.1\AndroidManifest.xml:26:22-94
 19
 20    <application
 20-->C:\Users\roina\AndroidStudioProjects\Dive\mobile\src\main\AndroidManifest.xml:7:5-45:19
 21        android:allowBackup="true"
 21-->C:\Users\roina\AndroidStudioProjects\Dive\mobile\src\main\AndroidManifest.xml:8:9-35
 22        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-22-->[androidx.core:core:1.10.1] C:\Users\roina\.gradle\caches\8.13\transforms\9909882e73f4e6139fa7449df7c46b62\transformed\core-1.10.1\AndroidManifest.xml:28:18-86
+22-->[androidx.core:core:1.10.1] C:\Users\roina\.gradle\caches\8.13\transforms\e8bc455d7ab53c9768f09f9450795f68\transformed\core-1.10.1\AndroidManifest.xml:28:18-86
 23        android:debuggable="true"
 24        android:extractNativeLibs="false"
 25        android:label="@string/app_name"
@@ -101,45 +101,45 @@
 62        </provider>
 63
 64        <activity
-64-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\roina\.gradle\caches\8.13\transforms\8ff76422cc7699de110d84644cdd615b\transformed\play-services-auth-20.7.0\AndroidManifest.xml:23:9-27:75
+64-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\roina\.gradle\caches\8.13\transforms\6f45c3e2d22f5a3e3c37d7e210eb4523\transformed\play-services-auth-20.7.0\AndroidManifest.xml:23:9-27:75
 65            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
-65-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\roina\.gradle\caches\8.13\transforms\8ff76422cc7699de110d84644cdd615b\transformed\play-services-auth-20.7.0\AndroidManifest.xml:24:13-93
+65-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\roina\.gradle\caches\8.13\transforms\6f45c3e2d22f5a3e3c37d7e210eb4523\transformed\play-services-auth-20.7.0\AndroidManifest.xml:24:13-93
 66            android:excludeFromRecents="true"
-66-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\roina\.gradle\caches\8.13\transforms\8ff76422cc7699de110d84644cdd615b\transformed\play-services-auth-20.7.0\AndroidManifest.xml:25:13-46
+66-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\roina\.gradle\caches\8.13\transforms\6f45c3e2d22f5a3e3c37d7e210eb4523\transformed\play-services-auth-20.7.0\AndroidManifest.xml:25:13-46
 67            android:exported="false"
-67-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\roina\.gradle\caches\8.13\transforms\8ff76422cc7699de110d84644cdd615b\transformed\play-services-auth-20.7.0\AndroidManifest.xml:26:13-37
+67-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\roina\.gradle\caches\8.13\transforms\6f45c3e2d22f5a3e3c37d7e210eb4523\transformed\play-services-auth-20.7.0\AndroidManifest.xml:26:13-37
 68            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-68-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\roina\.gradle\caches\8.13\transforms\8ff76422cc7699de110d84644cdd615b\transformed\play-services-auth-20.7.0\AndroidManifest.xml:27:13-72
+68-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\roina\.gradle\caches\8.13\transforms\6f45c3e2d22f5a3e3c37d7e210eb4523\transformed\play-services-auth-20.7.0\AndroidManifest.xml:27:13-72
 69        <!--
 70            Service handling Google Sign-In user revocation. For apps that do not integrate with
 71            Google Sign-In, this service will never be started.
 72        -->
 73        <service
-73-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\roina\.gradle\caches\8.13\transforms\8ff76422cc7699de110d84644cdd615b\transformed\play-services-auth-20.7.0\AndroidManifest.xml:33:9-37:51
+73-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\roina\.gradle\caches\8.13\transforms\6f45c3e2d22f5a3e3c37d7e210eb4523\transformed\play-services-auth-20.7.0\AndroidManifest.xml:33:9-37:51
 74            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
-74-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\roina\.gradle\caches\8.13\transforms\8ff76422cc7699de110d84644cdd615b\transformed\play-services-auth-20.7.0\AndroidManifest.xml:34:13-89
+74-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\roina\.gradle\caches\8.13\transforms\6f45c3e2d22f5a3e3c37d7e210eb4523\transformed\play-services-auth-20.7.0\AndroidManifest.xml:34:13-89
 75            android:exported="true"
-75-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\roina\.gradle\caches\8.13\transforms\8ff76422cc7699de110d84644cdd615b\transformed\play-services-auth-20.7.0\AndroidManifest.xml:35:13-36
+75-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\roina\.gradle\caches\8.13\transforms\6f45c3e2d22f5a3e3c37d7e210eb4523\transformed\play-services-auth-20.7.0\AndroidManifest.xml:35:13-36
 76            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"
-76-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\roina\.gradle\caches\8.13\transforms\8ff76422cc7699de110d84644cdd615b\transformed\play-services-auth-20.7.0\AndroidManifest.xml:36:13-107
+76-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\roina\.gradle\caches\8.13\transforms\6f45c3e2d22f5a3e3c37d7e210eb4523\transformed\play-services-auth-20.7.0\AndroidManifest.xml:36:13-107
 77            android:visibleToInstantApps="true" />
-77-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\roina\.gradle\caches\8.13\transforms\8ff76422cc7699de110d84644cdd615b\transformed\play-services-auth-20.7.0\AndroidManifest.xml:37:13-48
+77-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\roina\.gradle\caches\8.13\transforms\6f45c3e2d22f5a3e3c37d7e210eb4523\transformed\play-services-auth-20.7.0\AndroidManifest.xml:37:13-48
 78
 79        <activity
-79-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\roina\.gradle\caches\8.13\transforms\90803581887c040358eda7e49af1ccdf\transformed\play-services-base-18.0.1\AndroidManifest.xml:20:9-22:45
+79-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\roina\.gradle\caches\8.13\transforms\f4d462d1ca8d4912ae5c5cd7071960f0\transformed\play-services-base-18.0.1\AndroidManifest.xml:20:9-22:45
 80            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-80-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\roina\.gradle\caches\8.13\transforms\90803581887c040358eda7e49af1ccdf\transformed\play-services-base-18.0.1\AndroidManifest.xml:20:19-85
+80-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\roina\.gradle\caches\8.13\transforms\f4d462d1ca8d4912ae5c5cd7071960f0\transformed\play-services-base-18.0.1\AndroidManifest.xml:20:19-85
 81            android:exported="false"
-81-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\roina\.gradle\caches\8.13\transforms\90803581887c040358eda7e49af1ccdf\transformed\play-services-base-18.0.1\AndroidManifest.xml:22:19-43
+81-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\roina\.gradle\caches\8.13\transforms\f4d462d1ca8d4912ae5c5cd7071960f0\transformed\play-services-base-18.0.1\AndroidManifest.xml:22:19-43
 82            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-82-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\roina\.gradle\caches\8.13\transforms\90803581887c040358eda7e49af1ccdf\transformed\play-services-base-18.0.1\AndroidManifest.xml:21:19-78
+82-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\roina\.gradle\caches\8.13\transforms\f4d462d1ca8d4912ae5c5cd7071960f0\transformed\play-services-base-18.0.1\AndroidManifest.xml:21:19-78
 83
 84        <meta-data
-84-->[com.google.android.gms:play-services-basement:18.2.0] C:\Users\roina\.gradle\caches\8.13\transforms\178f8a1ff4447a3568f121cd7adf33a3\transformed\play-services-basement-18.2.0\AndroidManifest.xml:21:9-23:69
+84-->[com.google.android.gms:play-services-basement:18.2.0] C:\Users\roina\.gradle\caches\8.13\transforms\bd1d7bd740188d620f25f1a84785096e\transformed\play-services-basement-18.2.0\AndroidManifest.xml:21:9-23:69
 85            android:name="com.google.android.gms.version"
-85-->[com.google.android.gms:play-services-basement:18.2.0] C:\Users\roina\.gradle\caches\8.13\transforms\178f8a1ff4447a3568f121cd7adf33a3\transformed\play-services-basement-18.2.0\AndroidManifest.xml:22:13-58
+85-->[com.google.android.gms:play-services-basement:18.2.0] C:\Users\roina\.gradle\caches\8.13\transforms\bd1d7bd740188d620f25f1a84785096e\transformed\play-services-basement-18.2.0\AndroidManifest.xml:22:13-58
 86            android:value="@integer/google_play_services_version" />
-86-->[com.google.android.gms:play-services-basement:18.2.0] C:\Users\roina\.gradle\caches\8.13\transforms\178f8a1ff4447a3568f121cd7adf33a3\transformed\play-services-basement-18.2.0\AndroidManifest.xml:23:13-66
+86-->[com.google.android.gms:play-services-basement:18.2.0] C:\Users\roina\.gradle\caches\8.13\transforms\bd1d7bd740188d620f25f1a84785096e\transformed\play-services-basement-18.2.0\AndroidManifest.xml:23:13-66
 87    </application>
 88
 89</manifest>

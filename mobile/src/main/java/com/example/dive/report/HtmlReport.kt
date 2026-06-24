@@ -125,6 +125,17 @@ object HtmlReport {
 
         sb.append(depthChartSvg(s))
 
+        if (s.hasTemps) {
+            val minT = s.minSkinTemp
+            val maxT = s.maxSkinTemp
+            sb.append("<div class=\"cards\">")
+            if (minT != null) card(sb, "${f1(minT)} ℃", "최저 체온")
+            if (maxT != null) card(sb, "${f1(maxT)} ℃", "최고 체온")
+            card(sb, "${s.temps.size}", "측정 횟수")
+            sb.append("</div>")
+            sb.append(tempChartSvg(s))
+        }
+
         if (s.mode == DiveMode.FREEDIVING && s.dives.isNotEmpty()) {
             sb.append("<table><tr><th>#</th><th>최대 수심</th><th>시간</th></tr>")
             s.dives.forEachIndexed { i, d ->
@@ -168,6 +179,46 @@ object HtmlReport {
         svg.append("<polyline points=\"$line\" fill=\"none\" stroke=\"#4fc3f7\" stroke-width=\"2\"/>")
         svg.append("<text x=\"${f1(pad)}\" y=\"${f1(pad - 6)}\" fill=\"#9bbccb\" font-size=\"9\">0m</text>")
         svg.append("<text x=\"${f1(pad)}\" y=\"${f1(h - 4)}\" fill=\"#9bbccb\" font-size=\"9\">최대 ${f1(maxD)}m</text>")
+        svg.append("</svg>")
+        return svg.toString()
+    }
+
+    private fun tempChartSvg(session: DiveSession): String {
+        val temps = session.temps
+        if (temps.isEmpty()) return ""
+
+        val skins = temps.map { it.skin }
+        val maxT = skins.maxOrNull() ?: return ""
+        val minT = skins.minOrNull() ?: return ""
+        // 작은 변화도 보이도록 위아래 0.5℃ 여백, 최소 1℃ 범위 보장
+        val lo = (minT - 0.5f)
+        val hi = (maxT + 0.5f).coerceAtLeast(lo + 1f)
+        val range = hi - lo
+
+        val w = 320f
+        val h = 140f
+        val pad = 22f
+        val plotW = w - 2 * pad
+        val plotH = h - 2 * pad
+        val n = skins.size
+
+        fun px(i: Int) = pad + if (n <= 1) 0f else plotW * i / (n - 1)
+        fun py(t: Float) = pad + plotH * (1f - (t - lo) / range)
+
+        val line = StringBuilder()
+        skins.forEachIndexed { i, t ->
+            if (i > 0) line.append(' ')
+            line.append(f1(px(i))).append(',').append(f1(py(t)))
+        }
+
+        val svg = StringBuilder()
+        svg.append("<svg viewBox=\"0 0 ${w.toInt()} ${h.toInt()}\" xmlns=\"http://www.w3.org/2000/svg\">")
+        svg.append("<polyline points=\"$line\" fill=\"none\" stroke=\"#ffb74d\" stroke-width=\"2\"/>")
+        skins.forEachIndexed { i, t ->
+            svg.append("<circle cx=\"${f1(px(i))}\" cy=\"${f1(py(t))}\" r=\"2.5\" fill=\"#ffb74d\"/>")
+        }
+        svg.append("<text x=\"${f1(pad)}\" y=\"${f1(pad - 8)}\" fill=\"#9bbccb\" font-size=\"9\">${f1(hi)}℃</text>")
+        svg.append("<text x=\"${f1(pad)}\" y=\"${f1(h - 6)}\" fill=\"#9bbccb\" font-size=\"9\">${f1(lo)}℃</text>")
         svg.append("</svg>")
         return svg.toString()
     }

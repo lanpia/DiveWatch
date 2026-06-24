@@ -4,24 +4,7 @@
             "outputFile": "com.example.dive.mobile-mergeDebugResources-10:/values-pl/values-pl.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\roina\\.gradle\\caches\\8.13\\transforms\\9909882e73f4e6139fa7449df7c46b62\\transformed\\core-1.10.1\\res\\values-pl\\values-pl.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9",
-                        "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,152,254,352,451,565,670,792",
-                        "endColumns": "96,101,97,98,113,104,121,100",
-                        "endOffsets": "147,249,347,446,560,665,787,888"
-                    },
-                    "to": {
-                        "startLines": "2,3,4,5,6,7,8,27",
-                        "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,152,254,352,451,565,670,3044",
-                        "endColumns": "96,101,97,98,113,104,121,100",
-                        "endOffsets": "147,249,347,446,560,665,787,3140"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\roina\\.gradle\\caches\\8.13\\transforms\\178f8a1ff4447a3568f121cd7adf33a3\\transformed\\play-services-basement-18.2.0\\res\\values-pl\\values.xml",
+                    "source": "C:\\Users\\roina\\.gradle\\caches\\8.13\\transforms\\bd1d7bd740188d620f25f1a84785096e\\transformed\\play-services-basement-18.2.0\\res\\values-pl\\values.xml",
                     "from": {
                         "startLines": "4",
                         "startColumns": "0",
@@ -38,7 +21,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\roina\\.gradle\\caches\\8.13\\transforms\\90803581887c040358eda7e49af1ccdf\\transformed\\play-services-base-18.0.1\\res\\values-pl\\values.xml",
+                    "source": "C:\\Users\\roina\\.gradle\\caches\\8.13\\transforms\\f4d462d1ca8d4912ae5c5cd7071960f0\\transformed\\play-services-base-18.0.1\\res\\values-pl\\values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
                         "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
@@ -52,6 +35,23 @@
                         "startOffsets": "792,896,1064,1186,1296,1447,1572,1683,1922,2093,2202,2377,2505,2664,2825,2894,2960",
                         "endColumns": "103,167,121,109,150,124,110,98,170,108,174,127,158,160,68,65,83",
                         "endOffsets": "891,1059,1181,1291,1442,1567,1678,1777,2088,2197,2372,2500,2659,2820,2889,2955,3039"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\roina\\.gradle\\caches\\8.13\\transforms\\e8bc455d7ab53c9768f09f9450795f68\\transformed\\core-1.10.1\\res\\values-pl\\values-pl.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,152,254,352,451,565,670,792",
+                        "endColumns": "96,101,97,98,113,104,121,100",
+                        "endOffsets": "147,249,347,446,560,665,787,888"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5,6,7,8,27",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,152,254,352,451,565,670,3044",
+                        "endColumns": "96,101,97,98,113,104,121,100",
+                        "endOffsets": "147,249,347,446,560,665,787,3140"
                     }
                 }
             ]

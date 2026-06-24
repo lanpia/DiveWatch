@@ -23,11 +23,13 @@ import androidx.wear.compose.material.Scaffold
 import androidx.wear.compose.material.Text
 import com.example.dive.data.DiveLogRepository
 import com.example.dive.deco.DecoModel
+import com.example.dive.health.SkinTemperatureManager
 import com.example.dive.location.LocationHelper
 import com.example.dive.model.DiveLog
 import com.example.dive.model.DiveMode
 import com.example.dive.model.DiveSample
 import com.example.dive.model.DiveSession
+import com.example.dive.model.TempReading
 import com.example.dive.sensor.PressureSensorManager
 import com.example.dive.util.vibrateWarning
 import kotlinx.coroutines.delay
@@ -44,6 +46,7 @@ private const val SAFETY_STOP_SECONDS = 180   // 안전정지 3분
 private const val SAFETY_STOP_TRIGGER_DEPTH = 10f // 이 수심보다 깊었던 경우만 권고
 private const val BACK_PRESSES_TO_EXIT = 3
 private const val BACK_RESET_MS = 2000L
+private const val TEMP_INTERVAL_MS = 60_000L  // 체온 측정 주기(1분)
 
 /**
  * 모드별 다이브 화면. 화면 1회 방문 = 1 세션.
@@ -78,6 +81,13 @@ fun DiveScreen(
     var diveLat by remember { mutableStateOf<Double?>(null) }
     var diveLng by remember { mutableStateOf<Double?>(null) }
     var divePlace by remember { mutableStateOf<String?>(null) }
+
+    // 체온(피부온도) 트랙 — 세션 동안 1분마다 측정
+    val tempManager = remember { SkinTemperatureManager(context) }
+    val sessionTemps = remember { mutableStateListOf<TempReading>() }
+    var lastSkinTemp by remember { mutableStateOf<Float?>(null) }
+    var tempStatus by remember { mutableStateOf<String?>(null) }
+    var tempAvailable by remember { mutableStateOf(false) }
 
     // 상승 속도(스쿠버)
     val rateWindow = remember { ArrayDeque<Pair<Long, Float>>() }
@@ -160,7 +170,8 @@ fun DiveScreen(
                     dives = sessionDives.toList(),
                     latitude = diveLat,
                     longitude = diveLng,
-                    placeName = divePlace
+                    placeName = divePlace,
+                    temps = sessionTemps.toList()
                 )
             )
         }
@@ -247,6 +258,33 @@ fun DiveScreen(
                 diveLng = loc.second
                 divePlace = LocationHelper.placeName(context, loc.first, loc.second)
             }
+        }
+    }
+
+    // 체온 센서: 화면 진입 시 연결, 이탈 시 해제. 측정값은 트랙에 누적.
+    DisposableEffect(Unit) {
+        tempManager.onMeasurement = { skin, ambient ->
+            lastSkinTemp = skin
+            tempStatus = null
+            val t = (System.currentTimeMillis() - sessionStartMs) / 1000
+            sessionTemps.add(TempReading(timeSec = t, skin = skin, ambient = ambient))
+        }
+        tempManager.onStatus = { msg ->
+            tempAvailable = tempManager.isAvailable
+            tempStatus = msg
+        }
+        tempManager.connect()
+        onDispose { tempManager.disconnect() }
+    }
+
+    // 1분마다 체온 1회 측정(센서 준비된 동안만)
+    LaunchedEffect(Unit) {
+        while (true) {
+            if (tempManager.isAvailable) {
+                tempAvailable = true
+                tempManager.measureOnce()
+            }
+            delay(TEMP_INTERVAL_MS)
         }
     }
 
@@ -405,6 +443,28 @@ fun DiveScreen(
                         )
                     }
                 }
+            }
+
+            // 체온(피부온도) — 측정값이 있으면 표시
+            val skin = lastSkinTemp
+            if (skin != null) {
+                Spacer(Modifier.height(6.dp))
+                Text(
+                    text = "🌡 체온 %.1f℃".format(skin),
+                    fontSize = 13.sp,
+                    color = Color(0xFFFFB74D)
+                )
+                if (sessionTemps.size > 1) {
+                    Text(text = "측정 ${sessionTemps.size}회", fontSize = 10.sp, color = Color(0xFF9BBCCB))
+                }
+            } else if (tempStatus != null) {
+                Spacer(Modifier.height(6.dp))
+                Text(
+                    text = "🌡 ${tempStatus}",
+                    fontSize = 10.sp,
+                    color = Color(0xFF9BBCCB),
+                    textAlign = TextAlign.Center
+                )
             }
 
             Spacer(Modifier.height(8.dp))

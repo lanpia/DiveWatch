@@ -120,6 +120,20 @@ fun LogDetailScreen(
                 }
             }
 
+            if (session.hasTemps) {
+                Spacer(Modifier.height(8.dp))
+                Text(text = "🌡 체온(피부온도)", fontSize = 12.sp, color = Color(0xFFFFB74D))
+                val minT = session.minSkinTemp
+                val maxT = session.maxSkinTemp
+                if (minT != null && maxT != null) {
+                    Text(
+                        text = "최저 %.1f℃ · 최고 %.1f℃".format(minT, maxT),
+                        fontSize = 12.sp
+                    )
+                }
+                Text(text = "측정 ${session.temps.size}회", fontSize = 11.sp, color = Color(0xFF9BBCCB))
+            }
+
             Spacer(Modifier.height(8.dp))
             Chip(
                 modifier = Modifier.fillMaxWidth(),

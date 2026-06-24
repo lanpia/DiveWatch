@@ -12,10 +12,14 @@ data class DiveSession(
     val dives: List<DiveLog>,
     val latitude: Double? = null,
     val longitude: Double? = null,
-    val placeName: String? = null
+    val placeName: String? = null,
+    val temps: List<TempReading> = emptyList()
 ) {
     val diveCount: Int get() = dives.size
     val maxDepth: Float get() = dives.maxOfOrNull { it.maxDepth } ?: 0f
     val totalDiveSec: Long get() = dives.sumOf { it.durationSec }
     val hasLocation: Boolean get() = latitude != null && longitude != null
+    val hasTemps: Boolean get() = temps.isNotEmpty()
+    val minSkinTemp: Float? get() = temps.minOfOrNull { it.skin }
+    val maxSkinTemp: Float? get() = temps.maxOfOrNull { it.skin }
 }

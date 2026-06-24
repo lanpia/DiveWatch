@@ -15,39 +15,39 @@ ADDED from C:\Users\roina\AndroidStudioProjects\Dive\mobile\src\main\AndroidMani
 INJECTED from C:\Users\roina\AndroidStudioProjects\Dive\mobile\src\main\AndroidManifest.xml:2:1-46:12
 INJECTED from C:\Users\roina\AndroidStudioProjects\Dive\mobile\src\main\AndroidManifest.xml:2:1-46:12
 INJECTED from C:\Users\roina\AndroidStudioProjects\Dive\mobile\src\main\AndroidManifest.xml:2:1-46:12
-MERGED from [com.google.android.gms:play-services-wearable:18.0.0] C:\Users\roina\.gradle\caches\8.13\transforms\45033428ddda17fa36bd083e326f692d\transformed\play-services-wearable-18.0.0\AndroidManifest.xml:17:1-24:12
-MERGED from [com.google.android.gms:play-services-auth:20.7.0] C:\Users\roina\.gradle\caches\8.13\transforms\8ff76422cc7699de110d84644cdd615b\transformed\play-services-auth-20.7.0\AndroidManifest.xml:17:1-40:12
-MERGED from [com.google.android.gms:play-services-auth-api-phone:18.0.1] C:\Users\roina\.gradle\caches\8.13\transforms\54cca910c2665f0840358a88611c525d\transformed\play-services-auth-api-phone-18.0.1\AndroidManifest.xml:2:1-7:12
-MERGED from [com.google.android.gms:play-services-auth-base:18.0.4] C:\Users\roina\.gradle\caches\8.13\transforms\be26788bea5947aa60f9706126adc9e0\transformed\play-services-auth-base-18.0.4\AndroidManifest.xml:2:1-7:12
-MERGED from [com.google.android.gms:play-services-fido:20.0.1] C:\Users\roina\.gradle\caches\8.13\transforms\477570a99b6cd709559c620fb8649ce9\transformed\play-services-fido-20.0.1\AndroidManifest.xml:2:1-10:12
-MERGED from [com.google.android.gms:play-services-base:18.0.1] C:\Users\roina\.gradle\caches\8.13\transforms\90803581887c040358eda7e49af1ccdf\transformed\play-services-base-18.0.1\AndroidManifest.xml:16:1-24:12
-MERGED from [com.google.android.gms:play-services-tasks:18.0.1] C:\Users\roina\.gradle\caches\8.13\transforms\794b5248d3666959e5b40d3ab2dfcc80\transformed\play-services-tasks-18.0.1\AndroidManifest.xml:2:1-6:12
-MERGED from [com.google.android.gms:play-services-basement:18.2.0] C:\Users\roina\.gradle\caches\8.13\transforms\178f8a1ff4447a3568f121cd7adf33a3\transformed\play-services-basement-18.2.0\AndroidManifest.xml:16:1-26:12
-MERGED from [androidx.fragment:fragment:1.0.0] C:\Users\roina\.gradle\caches\8.13\transforms\4382e4760d9185c185e32565af78e1ab\transformed\fragment-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\roina\.gradle\caches\8.13\transforms\9f1f8f0b2133a84da6554c3dd0d3ba9d\transformed\legacy-support-core-ui-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\roina\.gradle\caches\8.13\transforms\bb5f1591542abd43cd7db24da8930366\transformed\legacy-support-core-utils-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.loader:loader:1.0.0] C:\Users\roina\.gradle\caches\8.13\transforms\68eb1d7292f564ac30ce1f3189f4fd65\transformed\loader-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\roina\.gradle\caches\8.13\transforms\f7987e4bb86df0b65559b4f45bc3832e\transformed\viewpager-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] C:\Users\roina\.gradle\caches\8.13\transforms\afe558bc4a773bcc453dc84e63c4e6a6\transformed\coordinatorlayout-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\roina\.gradle\caches\8.13\transforms\b0f8ecb25d5a2e038e2d27e2c6bb0608\transformed\drawerlayout-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\roina\.gradle\caches\8.13\transforms\dd8e15b4b398649443abf5a4ed84a973\transformed\slidingpanelayout-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.customview:customview:1.0.0] C:\Users\roina\.gradle\caches\8.13\transforms\09a17c56135f1ea01c2c826619179277\transformed\customview-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\roina\.gradle\caches\8.13\transforms\3e5b27ea09800e9daac64504250cb856\transformed\swiperefreshlayout-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\roina\.gradle\caches\8.13\transforms\8a86cf4c3913db6efb79aa69154144f5\transformed\asynclayoutinflater-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.core:core:1.10.1] C:\Users\roina\.gradle\caches\8.13\transforms\9909882e73f4e6139fa7449df7c46b62\transformed\core-1.10.1\AndroidManifest.xml:17:1-30:12
-MERGED from [androidx.core:core-ktx:1.10.1] C:\Users\roina\.gradle\caches\8.13\transforms\ddb59494a5a102611de4e1adb894c52c\transformed\core-ktx-1.10.1\AndroidManifest.xml:2:1-7:12
-MERGED from [androidx.annotation:annotation-experimental:1.3.0] C:\Users\roina\.gradle\caches\8.13\transforms\ec708cf38cde590c25ba2864aa0c7d0b\transformed\annotation-experimental-1.3.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\roina\.gradle\caches\8.13\transforms\788b68840b7d7768864879f6d0495ca1\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:17:1-27:12
-MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\roina\.gradle\caches\8.13\transforms\5bff079ae491463b083c28140c418465\transformed\interpolator-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-runtime:2.3.1] C:\Users\roina\.gradle\caches\8.13\transforms\34018173e14a108e88a78b1dae069868\transformed\lifecycle-runtime-2.3.1\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] C:\Users\roina\.gradle\caches\8.13\transforms\3f992b658e9661b2a758b0c7ab5ba31a\transformed\lifecycle-viewmodel-2.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\roina\.gradle\caches\8.13\transforms\71db0aff37ba9bb24148c10d4889b493\transformed\lifecycle-livedata-2.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\roina\.gradle\caches\8.13\transforms\3174a9855341f6f93ef12f7d8f3cdf7c\transformed\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\roina\.gradle\caches\8.13\transforms\5f832345dbcae4bf769627551c969563\transformed\core-runtime-2.1.0\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\roina\.gradle\caches\8.13\transforms\7f6ca6659e425a7a29ffc6aeb8922761\transformed\cursoradapter-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\roina\.gradle\caches\8.13\transforms\9894802a6b4240446a9bb0728677d7b5\transformed\documentfile-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\roina\.gradle\caches\8.13\transforms\18fa06e7954d4049df4c3921dc0d8e3b\transformed\localbroadcastmanager-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.print:print:1.0.0] C:\Users\roina\.gradle\caches\8.13\transforms\76795b2b8b256c21c7a9bee7c47a15c1\transformed\print-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.android.gms:play-services-wearable:18.0.0] C:\Users\roina\.gradle\caches\8.13\transforms\b4003179529fe55b98e8dbe457053410\transformed\play-services-wearable-18.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.gms:play-services-auth:20.7.0] C:\Users\roina\.gradle\caches\8.13\transforms\6f45c3e2d22f5a3e3c37d7e210eb4523\transformed\play-services-auth-20.7.0\AndroidManifest.xml:17:1-40:12
+MERGED from [com.google.android.gms:play-services-auth-api-phone:18.0.1] C:\Users\roina\.gradle\caches\8.13\transforms\44f39fc3c53f3141256e5d9053d0f274\transformed\play-services-auth-api-phone-18.0.1\AndroidManifest.xml:2:1-7:12
+MERGED from [com.google.android.gms:play-services-auth-base:18.0.4] C:\Users\roina\.gradle\caches\8.13\transforms\972ad60f8de18006cf7440354b5eabf5\transformed\play-services-auth-base-18.0.4\AndroidManifest.xml:2:1-7:12
+MERGED from [com.google.android.gms:play-services-fido:20.0.1] C:\Users\roina\.gradle\caches\8.13\transforms\858bfd7a6f477fca999addd384785ab4\transformed\play-services-fido-20.0.1\AndroidManifest.xml:2:1-10:12
+MERGED from [com.google.android.gms:play-services-base:18.0.1] C:\Users\roina\.gradle\caches\8.13\transforms\f4d462d1ca8d4912ae5c5cd7071960f0\transformed\play-services-base-18.0.1\AndroidManifest.xml:16:1-24:12
+MERGED from [com.google.android.gms:play-services-tasks:18.0.1] C:\Users\roina\.gradle\caches\8.13\transforms\81bc9cc5268a2eba829c93024aa22888\transformed\play-services-tasks-18.0.1\AndroidManifest.xml:2:1-6:12
+MERGED from [com.google.android.gms:play-services-basement:18.2.0] C:\Users\roina\.gradle\caches\8.13\transforms\bd1d7bd740188d620f25f1a84785096e\transformed\play-services-basement-18.2.0\AndroidManifest.xml:16:1-26:12
+MERGED from [androidx.fragment:fragment:1.0.0] C:\Users\roina\.gradle\caches\8.13\transforms\cbaaf22a927868942c95de207876c436\transformed\fragment-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\roina\.gradle\caches\8.13\transforms\37b696c251d924d2da18ef7788ee6250\transformed\legacy-support-core-ui-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\roina\.gradle\caches\8.13\transforms\1c24848bfa33304554a43a5818ed43ba\transformed\legacy-support-core-utils-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\roina\.gradle\caches\8.13\transforms\ae11328309128d68772f62b6960c947b\transformed\loader-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\roina\.gradle\caches\8.13\transforms\f3ccc59e7ae5a0bb8abf00f6896392f7\transformed\viewpager-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] C:\Users\roina\.gradle\caches\8.13\transforms\f57c69727d3a86341b496a57728b7d69\transformed\coordinatorlayout-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\roina\.gradle\caches\8.13\transforms\d2e1f267451ca0a7552d00e7c8296a1b\transformed\drawerlayout-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\roina\.gradle\caches\8.13\transforms\b78beaa493a1a6fbf30c633445fbd869\transformed\slidingpanelayout-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\roina\.gradle\caches\8.13\transforms\1a73b8b49273822eb227691aab8487e4\transformed\customview-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\roina\.gradle\caches\8.13\transforms\3fe0c95459ad2ff17175457ba54a9b7a\transformed\swiperefreshlayout-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\roina\.gradle\caches\8.13\transforms\efc960772ece4a5ecfa301209bb6e7e7\transformed\asynclayoutinflater-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core:1.10.1] C:\Users\roina\.gradle\caches\8.13\transforms\e8bc455d7ab53c9768f09f9450795f68\transformed\core-1.10.1\AndroidManifest.xml:17:1-30:12
+MERGED from [androidx.core:core-ktx:1.10.1] C:\Users\roina\.gradle\caches\8.13\transforms\6759d78b1c1d75896956f0bae6941f37\transformed\core-ktx-1.10.1\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.annotation:annotation-experimental:1.3.0] C:\Users\roina\.gradle\caches\8.13\transforms\2e0c79698b5003954607774cb64db5b5\transformed\annotation-experimental-1.3.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\roina\.gradle\caches\8.13\transforms\77f9eb84fb08262c54d6bf74e013c3b0\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\roina\.gradle\caches\8.13\transforms\ad724d83e6f1d0d07a415e40ac02a317\transformed\interpolator-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.3.1] C:\Users\roina\.gradle\caches\8.13\transforms\87ab4c07a2d125959b379976b7064fc9\transformed\lifecycle-runtime-2.3.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] C:\Users\roina\.gradle\caches\8.13\transforms\9039bfdca5766a46a286224a4602f3b3\transformed\lifecycle-viewmodel-2.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\roina\.gradle\caches\8.13\transforms\28989f35118a28ca27c47d3b52873358\transformed\lifecycle-livedata-2.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\roina\.gradle\caches\8.13\transforms\c0dd5530161843272fbaa29f7d5befbd\transformed\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\roina\.gradle\caches\8.13\transforms\7429191c039bffe457d7a366dc7e73c9\transformed\core-runtime-2.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\roina\.gradle\caches\8.13\transforms\78e798639322b708616114865969bba6\transformed\cursoradapter-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\roina\.gradle\caches\8.13\transforms\95f45dbf7de969788954e63830701c2c\transformed\documentfile-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\roina\.gradle\caches\8.13\transforms\2e88ff12eebfe6c576881361af5de153\transformed\localbroadcastmanager-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.print:print:1.0.0] C:\Users\roina\.gradle\caches\8.13\transforms\47fffde1e4c939ab69c9dbefb560b470\transformed\print-1.0.0\AndroidManifest.xml:17:1-22:12
 	package
 		INJECTED from C:\Users\roina\AndroidStudioProjects\Dive\mobile\src\main\AndroidManifest.xml
 	android:versionName
@@ -67,26 +67,26 @@ ADDED from C:\Users\roina\AndroidStudioProjects\Dive\mobile\src\main\AndroidMani
 application
 ADDED from C:\Users\roina\AndroidStudioProjects\Dive\mobile\src\main\AndroidManifest.xml:7:5-45:19
 INJECTED from C:\Users\roina\AndroidStudioProjects\Dive\mobile\src\main\AndroidManifest.xml:7:5-45:19
-MERGED from [com.google.android.gms:play-services-wearable:18.0.0] C:\Users\roina\.gradle\caches\8.13\transforms\45033428ddda17fa36bd083e326f692d\transformed\play-services-wearable-18.0.0\AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services-wearable:18.0.0] C:\Users\roina\.gradle\caches\8.13\transforms\45033428ddda17fa36bd083e326f692d\transformed\play-services-wearable-18.0.0\AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services-auth:20.7.0] C:\Users\roina\.gradle\caches\8.13\transforms\8ff76422cc7699de110d84644cdd615b\transformed\play-services-auth-20.7.0\AndroidManifest.xml:22:5-38:19
-MERGED from [com.google.android.gms:play-services-auth:20.7.0] C:\Users\roina\.gradle\caches\8.13\transforms\8ff76422cc7699de110d84644cdd615b\transformed\play-services-auth-20.7.0\AndroidManifest.xml:22:5-38:19
-MERGED from [com.google.android.gms:play-services-fido:20.0.1] C:\Users\roina\.gradle\caches\8.13\transforms\477570a99b6cd709559c620fb8649ce9\transformed\play-services-fido-20.0.1\AndroidManifest.xml:7:5-8:19
-MERGED from [com.google.android.gms:play-services-fido:20.0.1] C:\Users\roina\.gradle\caches\8.13\transforms\477570a99b6cd709559c620fb8649ce9\transformed\play-services-fido-20.0.1\AndroidManifest.xml:7:5-8:19
-MERGED from [com.google.android.gms:play-services-base:18.0.1] C:\Users\roina\.gradle\caches\8.13\transforms\90803581887c040358eda7e49af1ccdf\transformed\play-services-base-18.0.1\AndroidManifest.xml:19:5-23:19
-MERGED from [com.google.android.gms:play-services-base:18.0.1] C:\Users\roina\.gradle\caches\8.13\transforms\90803581887c040358eda7e49af1ccdf\transformed\play-services-base-18.0.1\AndroidManifest.xml:19:5-23:19
-MERGED from [com.google.android.gms:play-services-tasks:18.0.1] C:\Users\roina\.gradle\caches\8.13\transforms\794b5248d3666959e5b40d3ab2dfcc80\transformed\play-services-tasks-18.0.1\AndroidManifest.xml:5:5-20
-MERGED from [com.google.android.gms:play-services-tasks:18.0.1] C:\Users\roina\.gradle\caches\8.13\transforms\794b5248d3666959e5b40d3ab2dfcc80\transformed\play-services-tasks-18.0.1\AndroidManifest.xml:5:5-20
-MERGED from [com.google.android.gms:play-services-basement:18.2.0] C:\Users\roina\.gradle\caches\8.13\transforms\178f8a1ff4447a3568f121cd7adf33a3\transformed\play-services-basement-18.2.0\AndroidManifest.xml:20:5-24:19
-MERGED from [com.google.android.gms:play-services-basement:18.2.0] C:\Users\roina\.gradle\caches\8.13\transforms\178f8a1ff4447a3568f121cd7adf33a3\transformed\play-services-basement-18.2.0\AndroidManifest.xml:20:5-24:19
-MERGED from [androidx.core:core:1.10.1] C:\Users\roina\.gradle\caches\8.13\transforms\9909882e73f4e6139fa7449df7c46b62\transformed\core-1.10.1\AndroidManifest.xml:28:5-89
-MERGED from [androidx.core:core:1.10.1] C:\Users\roina\.gradle\caches\8.13\transforms\9909882e73f4e6139fa7449df7c46b62\transformed\core-1.10.1\AndroidManifest.xml:28:5-89
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\roina\.gradle\caches\8.13\transforms\788b68840b7d7768864879f6d0495ca1\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:24:5-25:19
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\roina\.gradle\caches\8.13\transforms\788b68840b7d7768864879f6d0495ca1\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:24:5-25:19
+MERGED from [com.google.android.gms:play-services-wearable:18.0.0] C:\Users\roina\.gradle\caches\8.13\transforms\b4003179529fe55b98e8dbe457053410\transformed\play-services-wearable-18.0.0\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-wearable:18.0.0] C:\Users\roina\.gradle\caches\8.13\transforms\b4003179529fe55b98e8dbe457053410\transformed\play-services-wearable-18.0.0\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-auth:20.7.0] C:\Users\roina\.gradle\caches\8.13\transforms\6f45c3e2d22f5a3e3c37d7e210eb4523\transformed\play-services-auth-20.7.0\AndroidManifest.xml:22:5-38:19
+MERGED from [com.google.android.gms:play-services-auth:20.7.0] C:\Users\roina\.gradle\caches\8.13\transforms\6f45c3e2d22f5a3e3c37d7e210eb4523\transformed\play-services-auth-20.7.0\AndroidManifest.xml:22:5-38:19
+MERGED from [com.google.android.gms:play-services-fido:20.0.1] C:\Users\roina\.gradle\caches\8.13\transforms\858bfd7a6f477fca999addd384785ab4\transformed\play-services-fido-20.0.1\AndroidManifest.xml:7:5-8:19
+MERGED from [com.google.android.gms:play-services-fido:20.0.1] C:\Users\roina\.gradle\caches\8.13\transforms\858bfd7a6f477fca999addd384785ab4\transformed\play-services-fido-20.0.1\AndroidManifest.xml:7:5-8:19
+MERGED from [com.google.android.gms:play-services-base:18.0.1] C:\Users\roina\.gradle\caches\8.13\transforms\f4d462d1ca8d4912ae5c5cd7071960f0\transformed\play-services-base-18.0.1\AndroidManifest.xml:19:5-23:19
+MERGED from [com.google.android.gms:play-services-base:18.0.1] C:\Users\roina\.gradle\caches\8.13\transforms\f4d462d1ca8d4912ae5c5cd7071960f0\transformed\play-services-base-18.0.1\AndroidManifest.xml:19:5-23:19
+MERGED from [com.google.android.gms:play-services-tasks:18.0.1] C:\Users\roina\.gradle\caches\8.13\transforms\81bc9cc5268a2eba829c93024aa22888\transformed\play-services-tasks-18.0.1\AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-tasks:18.0.1] C:\Users\roina\.gradle\caches\8.13\transforms\81bc9cc5268a2eba829c93024aa22888\transformed\play-services-tasks-18.0.1\AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-basement:18.2.0] C:\Users\roina\.gradle\caches\8.13\transforms\bd1d7bd740188d620f25f1a84785096e\transformed\play-services-basement-18.2.0\AndroidManifest.xml:20:5-24:19
+MERGED from [com.google.android.gms:play-services-basement:18.2.0] C:\Users\roina\.gradle\caches\8.13\transforms\bd1d7bd740188d620f25f1a84785096e\transformed\play-services-basement-18.2.0\AndroidManifest.xml:20:5-24:19
+MERGED from [androidx.core:core:1.10.1] C:\Users\roina\.gradle\caches\8.13\transforms\e8bc455d7ab53c9768f09f9450795f68\transformed\core-1.10.1\AndroidManifest.xml:28:5-89
+MERGED from [androidx.core:core:1.10.1] C:\Users\roina\.gradle\caches\8.13\transforms\e8bc455d7ab53c9768f09f9450795f68\transformed\core-1.10.1\AndroidManifest.xml:28:5-89
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\roina\.gradle\caches\8.13\transforms\77f9eb84fb08262c54d6bf74e013c3b0\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\roina\.gradle\caches\8.13\transforms\77f9eb84fb08262c54d6bf74e013c3b0\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:24:5-25:19
 	android:extractNativeLibs
 		INJECTED from C:\Users\roina\AndroidStudioProjects\Dive\mobile\src\main\AndroidManifest.xml
 	android:appComponentFactory
-		ADDED from [androidx.core:core:1.10.1] C:\Users\roina\.gradle\caches\8.13\transforms\9909882e73f4e6139fa7449df7c46b62\transformed\core-1.10.1\AndroidManifest.xml:28:18-86
+		ADDED from [androidx.core:core:1.10.1] C:\Users\roina\.gradle\caches\8.13\transforms\e8bc455d7ab53c9768f09f9450795f68\transformed\core-1.10.1\AndroidManifest.xml:28:18-86
 	android:label
 		ADDED from C:\Users\roina\AndroidStudioProjects\Dive\mobile\src\main\AndroidManifest.xml:9:9-41
 	android:allowBackup
@@ -139,127 +139,127 @@ uses-sdk
 INJECTED from C:\Users\roina\AndroidStudioProjects\Dive\mobile\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\roina\AndroidStudioProjects\Dive\mobile\src\main\AndroidManifest.xml
 INJECTED from C:\Users\roina\AndroidStudioProjects\Dive\mobile\src\main\AndroidManifest.xml
-MERGED from [com.google.android.gms:play-services-wearable:18.0.0] C:\Users\roina\.gradle\caches\8.13\transforms\45033428ddda17fa36bd083e326f692d\transformed\play-services-wearable-18.0.0\AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-wearable:18.0.0] C:\Users\roina\.gradle\caches\8.13\transforms\45033428ddda17fa36bd083e326f692d\transformed\play-services-wearable-18.0.0\AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-auth:20.7.0] C:\Users\roina\.gradle\caches\8.13\transforms\8ff76422cc7699de110d84644cdd615b\transformed\play-services-auth-20.7.0\AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-auth:20.7.0] C:\Users\roina\.gradle\caches\8.13\transforms\8ff76422cc7699de110d84644cdd615b\transformed\play-services-auth-20.7.0\AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-auth-api-phone:18.0.1] C:\Users\roina\.gradle\caches\8.13\transforms\54cca910c2665f0840358a88611c525d\transformed\play-services-auth-api-phone-18.0.1\AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-auth-api-phone:18.0.1] C:\Users\roina\.gradle\caches\8.13\transforms\54cca910c2665f0840358a88611c525d\transformed\play-services-auth-api-phone-18.0.1\AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-auth-base:18.0.4] C:\Users\roina\.gradle\caches\8.13\transforms\be26788bea5947aa60f9706126adc9e0\transformed\play-services-auth-base-18.0.4\AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-auth-base:18.0.4] C:\Users\roina\.gradle\caches\8.13\transforms\be26788bea5947aa60f9706126adc9e0\transformed\play-services-auth-base-18.0.4\AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-fido:20.0.1] C:\Users\roina\.gradle\caches\8.13\transforms\477570a99b6cd709559c620fb8649ce9\transformed\play-services-fido-20.0.1\AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-fido:20.0.1] C:\Users\roina\.gradle\caches\8.13\transforms\477570a99b6cd709559c620fb8649ce9\transformed\play-services-fido-20.0.1\AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-base:18.0.1] C:\Users\roina\.gradle\caches\8.13\transforms\90803581887c040358eda7e49af1ccdf\transformed\play-services-base-18.0.1\AndroidManifest.xml:18:5-43
-MERGED from [com.google.android.gms:play-services-base:18.0.1] C:\Users\roina\.gradle\caches\8.13\transforms\90803581887c040358eda7e49af1ccdf\transformed\play-services-base-18.0.1\AndroidManifest.xml:18:5-43
-MERGED from [com.google.android.gms:play-services-tasks:18.0.1] C:\Users\roina\.gradle\caches\8.13\transforms\794b5248d3666959e5b40d3ab2dfcc80\transformed\play-services-tasks-18.0.1\AndroidManifest.xml:4:5-43
-MERGED from [com.google.android.gms:play-services-tasks:18.0.1] C:\Users\roina\.gradle\caches\8.13\transforms\794b5248d3666959e5b40d3ab2dfcc80\transformed\play-services-tasks-18.0.1\AndroidManifest.xml:4:5-43
-MERGED from [com.google.android.gms:play-services-basement:18.2.0] C:\Users\roina\.gradle\caches\8.13\transforms\178f8a1ff4447a3568f121cd7adf33a3\transformed\play-services-basement-18.2.0\AndroidManifest.xml:18:5-43
-MERGED from [com.google.android.gms:play-services-basement:18.2.0] C:\Users\roina\.gradle\caches\8.13\transforms\178f8a1ff4447a3568f121cd7adf33a3\transformed\play-services-basement-18.2.0\AndroidManifest.xml:18:5-43
-MERGED from [androidx.fragment:fragment:1.0.0] C:\Users\roina\.gradle\caches\8.13\transforms\4382e4760d9185c185e32565af78e1ab\transformed\fragment-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.fragment:fragment:1.0.0] C:\Users\roina\.gradle\caches\8.13\transforms\4382e4760d9185c185e32565af78e1ab\transformed\fragment-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\roina\.gradle\caches\8.13\transforms\9f1f8f0b2133a84da6554c3dd0d3ba9d\transformed\legacy-support-core-ui-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\roina\.gradle\caches\8.13\transforms\9f1f8f0b2133a84da6554c3dd0d3ba9d\transformed\legacy-support-core-ui-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\roina\.gradle\caches\8.13\transforms\bb5f1591542abd43cd7db24da8930366\transformed\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\roina\.gradle\caches\8.13\transforms\bb5f1591542abd43cd7db24da8930366\transformed\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.loader:loader:1.0.0] C:\Users\roina\.gradle\caches\8.13\transforms\68eb1d7292f564ac30ce1f3189f4fd65\transformed\loader-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.loader:loader:1.0.0] C:\Users\roina\.gradle\caches\8.13\transforms\68eb1d7292f564ac30ce1f3189f4fd65\transformed\loader-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\roina\.gradle\caches\8.13\transforms\f7987e4bb86df0b65559b4f45bc3832e\transformed\viewpager-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\roina\.gradle\caches\8.13\transforms\f7987e4bb86df0b65559b4f45bc3832e\transformed\viewpager-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] C:\Users\roina\.gradle\caches\8.13\transforms\afe558bc4a773bcc453dc84e63c4e6a6\transformed\coordinatorlayout-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] C:\Users\roina\.gradle\caches\8.13\transforms\afe558bc4a773bcc453dc84e63c4e6a6\transformed\coordinatorlayout-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\roina\.gradle\caches\8.13\transforms\b0f8ecb25d5a2e038e2d27e2c6bb0608\transformed\drawerlayout-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\roina\.gradle\caches\8.13\transforms\b0f8ecb25d5a2e038e2d27e2c6bb0608\transformed\drawerlayout-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\roina\.gradle\caches\8.13\transforms\dd8e15b4b398649443abf5a4ed84a973\transformed\slidingpanelayout-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\roina\.gradle\caches\8.13\transforms\dd8e15b4b398649443abf5a4ed84a973\transformed\slidingpanelayout-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.customview:customview:1.0.0] C:\Users\roina\.gradle\caches\8.13\transforms\09a17c56135f1ea01c2c826619179277\transformed\customview-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.customview:customview:1.0.0] C:\Users\roina\.gradle\caches\8.13\transforms\09a17c56135f1ea01c2c826619179277\transformed\customview-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\roina\.gradle\caches\8.13\transforms\3e5b27ea09800e9daac64504250cb856\transformed\swiperefreshlayout-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\roina\.gradle\caches\8.13\transforms\3e5b27ea09800e9daac64504250cb856\transformed\swiperefreshlayout-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\roina\.gradle\caches\8.13\transforms\8a86cf4c3913db6efb79aa69154144f5\transformed\asynclayoutinflater-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\roina\.gradle\caches\8.13\transforms\8a86cf4c3913db6efb79aa69154144f5\transformed\asynclayoutinflater-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.core:core:1.10.1] C:\Users\roina\.gradle\caches\8.13\transforms\9909882e73f4e6139fa7449df7c46b62\transformed\core-1.10.1\AndroidManifest.xml:20:5-44
-MERGED from [androidx.core:core:1.10.1] C:\Users\roina\.gradle\caches\8.13\transforms\9909882e73f4e6139fa7449df7c46b62\transformed\core-1.10.1\AndroidManifest.xml:20:5-44
-MERGED from [androidx.core:core-ktx:1.10.1] C:\Users\roina\.gradle\caches\8.13\transforms\ddb59494a5a102611de4e1adb894c52c\transformed\core-ktx-1.10.1\AndroidManifest.xml:5:5-44
-MERGED from [androidx.core:core-ktx:1.10.1] C:\Users\roina\.gradle\caches\8.13\transforms\ddb59494a5a102611de4e1adb894c52c\transformed\core-ktx-1.10.1\AndroidManifest.xml:5:5-44
-MERGED from [androidx.annotation:annotation-experimental:1.3.0] C:\Users\roina\.gradle\caches\8.13\transforms\ec708cf38cde590c25ba2864aa0c7d0b\transformed\annotation-experimental-1.3.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.annotation:annotation-experimental:1.3.0] C:\Users\roina\.gradle\caches\8.13\transforms\ec708cf38cde590c25ba2864aa0c7d0b\transformed\annotation-experimental-1.3.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\roina\.gradle\caches\8.13\transforms\788b68840b7d7768864879f6d0495ca1\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\roina\.gradle\caches\8.13\transforms\788b68840b7d7768864879f6d0495ca1\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\roina\.gradle\caches\8.13\transforms\5bff079ae491463b083c28140c418465\transformed\interpolator-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\roina\.gradle\caches\8.13\transforms\5bff079ae491463b083c28140c418465\transformed\interpolator-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-runtime:2.3.1] C:\Users\roina\.gradle\caches\8.13\transforms\34018173e14a108e88a78b1dae069868\transformed\lifecycle-runtime-2.3.1\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-runtime:2.3.1] C:\Users\roina\.gradle\caches\8.13\transforms\34018173e14a108e88a78b1dae069868\transformed\lifecycle-runtime-2.3.1\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] C:\Users\roina\.gradle\caches\8.13\transforms\3f992b658e9661b2a758b0c7ab5ba31a\transformed\lifecycle-viewmodel-2.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] C:\Users\roina\.gradle\caches\8.13\transforms\3f992b658e9661b2a758b0c7ab5ba31a\transformed\lifecycle-viewmodel-2.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\roina\.gradle\caches\8.13\transforms\71db0aff37ba9bb24148c10d4889b493\transformed\lifecycle-livedata-2.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\roina\.gradle\caches\8.13\transforms\71db0aff37ba9bb24148c10d4889b493\transformed\lifecycle-livedata-2.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\roina\.gradle\caches\8.13\transforms\3174a9855341f6f93ef12f7d8f3cdf7c\transformed\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\roina\.gradle\caches\8.13\transforms\3174a9855341f6f93ef12f7d8f3cdf7c\transformed\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\roina\.gradle\caches\8.13\transforms\5f832345dbcae4bf769627551c969563\transformed\core-runtime-2.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\roina\.gradle\caches\8.13\transforms\5f832345dbcae4bf769627551c969563\transformed\core-runtime-2.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\roina\.gradle\caches\8.13\transforms\7f6ca6659e425a7a29ffc6aeb8922761\transformed\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\roina\.gradle\caches\8.13\transforms\7f6ca6659e425a7a29ffc6aeb8922761\transformed\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\roina\.gradle\caches\8.13\transforms\9894802a6b4240446a9bb0728677d7b5\transformed\documentfile-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\roina\.gradle\caches\8.13\transforms\9894802a6b4240446a9bb0728677d7b5\transformed\documentfile-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\roina\.gradle\caches\8.13\transforms\18fa06e7954d4049df4c3921dc0d8e3b\transformed\localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\roina\.gradle\caches\8.13\transforms\18fa06e7954d4049df4c3921dc0d8e3b\transformed\localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.print:print:1.0.0] C:\Users\roina\.gradle\caches\8.13\transforms\76795b2b8b256c21c7a9bee7c47a15c1\transformed\print-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.print:print:1.0.0] C:\Users\roina\.gradle\caches\8.13\transforms\76795b2b8b256c21c7a9bee7c47a15c1\transformed\print-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-wearable:18.0.0] C:\Users\roina\.gradle\caches\8.13\transforms\b4003179529fe55b98e8dbe457053410\transformed\play-services-wearable-18.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-wearable:18.0.0] C:\Users\roina\.gradle\caches\8.13\transforms\b4003179529fe55b98e8dbe457053410\transformed\play-services-wearable-18.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-auth:20.7.0] C:\Users\roina\.gradle\caches\8.13\transforms\6f45c3e2d22f5a3e3c37d7e210eb4523\transformed\play-services-auth-20.7.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-auth:20.7.0] C:\Users\roina\.gradle\caches\8.13\transforms\6f45c3e2d22f5a3e3c37d7e210eb4523\transformed\play-services-auth-20.7.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-auth-api-phone:18.0.1] C:\Users\roina\.gradle\caches\8.13\transforms\44f39fc3c53f3141256e5d9053d0f274\transformed\play-services-auth-api-phone-18.0.1\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-auth-api-phone:18.0.1] C:\Users\roina\.gradle\caches\8.13\transforms\44f39fc3c53f3141256e5d9053d0f274\transformed\play-services-auth-api-phone-18.0.1\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-auth-base:18.0.4] C:\Users\roina\.gradle\caches\8.13\transforms\972ad60f8de18006cf7440354b5eabf5\transformed\play-services-auth-base-18.0.4\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-auth-base:18.0.4] C:\Users\roina\.gradle\caches\8.13\transforms\972ad60f8de18006cf7440354b5eabf5\transformed\play-services-auth-base-18.0.4\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-fido:20.0.1] C:\Users\roina\.gradle\caches\8.13\transforms\858bfd7a6f477fca999addd384785ab4\transformed\play-services-fido-20.0.1\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-fido:20.0.1] C:\Users\roina\.gradle\caches\8.13\transforms\858bfd7a6f477fca999addd384785ab4\transformed\play-services-fido-20.0.1\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-base:18.0.1] C:\Users\roina\.gradle\caches\8.13\transforms\f4d462d1ca8d4912ae5c5cd7071960f0\transformed\play-services-base-18.0.1\AndroidManifest.xml:18:5-43
+MERGED from [com.google.android.gms:play-services-base:18.0.1] C:\Users\roina\.gradle\caches\8.13\transforms\f4d462d1ca8d4912ae5c5cd7071960f0\transformed\play-services-base-18.0.1\AndroidManifest.xml:18:5-43
+MERGED from [com.google.android.gms:play-services-tasks:18.0.1] C:\Users\roina\.gradle\caches\8.13\transforms\81bc9cc5268a2eba829c93024aa22888\transformed\play-services-tasks-18.0.1\AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-tasks:18.0.1] C:\Users\roina\.gradle\caches\8.13\transforms\81bc9cc5268a2eba829c93024aa22888\transformed\play-services-tasks-18.0.1\AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-basement:18.2.0] C:\Users\roina\.gradle\caches\8.13\transforms\bd1d7bd740188d620f25f1a84785096e\transformed\play-services-basement-18.2.0\AndroidManifest.xml:18:5-43
+MERGED from [com.google.android.gms:play-services-basement:18.2.0] C:\Users\roina\.gradle\caches\8.13\transforms\bd1d7bd740188d620f25f1a84785096e\transformed\play-services-basement-18.2.0\AndroidManifest.xml:18:5-43
+MERGED from [androidx.fragment:fragment:1.0.0] C:\Users\roina\.gradle\caches\8.13\transforms\cbaaf22a927868942c95de207876c436\transformed\fragment-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.fragment:fragment:1.0.0] C:\Users\roina\.gradle\caches\8.13\transforms\cbaaf22a927868942c95de207876c436\transformed\fragment-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\roina\.gradle\caches\8.13\transforms\37b696c251d924d2da18ef7788ee6250\transformed\legacy-support-core-ui-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\roina\.gradle\caches\8.13\transforms\37b696c251d924d2da18ef7788ee6250\transformed\legacy-support-core-ui-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\roina\.gradle\caches\8.13\transforms\1c24848bfa33304554a43a5818ed43ba\transformed\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\roina\.gradle\caches\8.13\transforms\1c24848bfa33304554a43a5818ed43ba\transformed\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\roina\.gradle\caches\8.13\transforms\ae11328309128d68772f62b6960c947b\transformed\loader-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\roina\.gradle\caches\8.13\transforms\ae11328309128d68772f62b6960c947b\transformed\loader-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\roina\.gradle\caches\8.13\transforms\f3ccc59e7ae5a0bb8abf00f6896392f7\transformed\viewpager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\roina\.gradle\caches\8.13\transforms\f3ccc59e7ae5a0bb8abf00f6896392f7\transformed\viewpager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] C:\Users\roina\.gradle\caches\8.13\transforms\f57c69727d3a86341b496a57728b7d69\transformed\coordinatorlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] C:\Users\roina\.gradle\caches\8.13\transforms\f57c69727d3a86341b496a57728b7d69\transformed\coordinatorlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\roina\.gradle\caches\8.13\transforms\d2e1f267451ca0a7552d00e7c8296a1b\transformed\drawerlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\roina\.gradle\caches\8.13\transforms\d2e1f267451ca0a7552d00e7c8296a1b\transformed\drawerlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\roina\.gradle\caches\8.13\transforms\b78beaa493a1a6fbf30c633445fbd869\transformed\slidingpanelayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\roina\.gradle\caches\8.13\transforms\b78beaa493a1a6fbf30c633445fbd869\transformed\slidingpanelayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\roina\.gradle\caches\8.13\transforms\1a73b8b49273822eb227691aab8487e4\transformed\customview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\roina\.gradle\caches\8.13\transforms\1a73b8b49273822eb227691aab8487e4\transformed\customview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\roina\.gradle\caches\8.13\transforms\3fe0c95459ad2ff17175457ba54a9b7a\transformed\swiperefreshlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\roina\.gradle\caches\8.13\transforms\3fe0c95459ad2ff17175457ba54a9b7a\transformed\swiperefreshlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\roina\.gradle\caches\8.13\transforms\efc960772ece4a5ecfa301209bb6e7e7\transformed\asynclayoutinflater-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\roina\.gradle\caches\8.13\transforms\efc960772ece4a5ecfa301209bb6e7e7\transformed\asynclayoutinflater-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.10.1] C:\Users\roina\.gradle\caches\8.13\transforms\e8bc455d7ab53c9768f09f9450795f68\transformed\core-1.10.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.10.1] C:\Users\roina\.gradle\caches\8.13\transforms\e8bc455d7ab53c9768f09f9450795f68\transformed\core-1.10.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core-ktx:1.10.1] C:\Users\roina\.gradle\caches\8.13\transforms\6759d78b1c1d75896956f0bae6941f37\transformed\core-ktx-1.10.1\AndroidManifest.xml:5:5-44
+MERGED from [androidx.core:core-ktx:1.10.1] C:\Users\roina\.gradle\caches\8.13\transforms\6759d78b1c1d75896956f0bae6941f37\transformed\core-ktx-1.10.1\AndroidManifest.xml:5:5-44
+MERGED from [androidx.annotation:annotation-experimental:1.3.0] C:\Users\roina\.gradle\caches\8.13\transforms\2e0c79698b5003954607774cb64db5b5\transformed\annotation-experimental-1.3.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.annotation:annotation-experimental:1.3.0] C:\Users\roina\.gradle\caches\8.13\transforms\2e0c79698b5003954607774cb64db5b5\transformed\annotation-experimental-1.3.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\roina\.gradle\caches\8.13\transforms\77f9eb84fb08262c54d6bf74e013c3b0\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\roina\.gradle\caches\8.13\transforms\77f9eb84fb08262c54d6bf74e013c3b0\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\roina\.gradle\caches\8.13\transforms\ad724d83e6f1d0d07a415e40ac02a317\transformed\interpolator-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\roina\.gradle\caches\8.13\transforms\ad724d83e6f1d0d07a415e40ac02a317\transformed\interpolator-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.3.1] C:\Users\roina\.gradle\caches\8.13\transforms\87ab4c07a2d125959b379976b7064fc9\transformed\lifecycle-runtime-2.3.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.3.1] C:\Users\roina\.gradle\caches\8.13\transforms\87ab4c07a2d125959b379976b7064fc9\transformed\lifecycle-runtime-2.3.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] C:\Users\roina\.gradle\caches\8.13\transforms\9039bfdca5766a46a286224a4602f3b3\transformed\lifecycle-viewmodel-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] C:\Users\roina\.gradle\caches\8.13\transforms\9039bfdca5766a46a286224a4602f3b3\transformed\lifecycle-viewmodel-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\roina\.gradle\caches\8.13\transforms\28989f35118a28ca27c47d3b52873358\transformed\lifecycle-livedata-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\roina\.gradle\caches\8.13\transforms\28989f35118a28ca27c47d3b52873358\transformed\lifecycle-livedata-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\roina\.gradle\caches\8.13\transforms\c0dd5530161843272fbaa29f7d5befbd\transformed\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\roina\.gradle\caches\8.13\transforms\c0dd5530161843272fbaa29f7d5befbd\transformed\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\roina\.gradle\caches\8.13\transforms\7429191c039bffe457d7a366dc7e73c9\transformed\core-runtime-2.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\roina\.gradle\caches\8.13\transforms\7429191c039bffe457d7a366dc7e73c9\transformed\core-runtime-2.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\roina\.gradle\caches\8.13\transforms\78e798639322b708616114865969bba6\transformed\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\roina\.gradle\caches\8.13\transforms\78e798639322b708616114865969bba6\transformed\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\roina\.gradle\caches\8.13\transforms\95f45dbf7de969788954e63830701c2c\transformed\documentfile-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\roina\.gradle\caches\8.13\transforms\95f45dbf7de969788954e63830701c2c\transformed\documentfile-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\roina\.gradle\caches\8.13\transforms\2e88ff12eebfe6c576881361af5de153\transformed\localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\roina\.gradle\caches\8.13\transforms\2e88ff12eebfe6c576881361af5de153\transformed\localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] C:\Users\roina\.gradle\caches\8.13\transforms\47fffde1e4c939ab69c9dbefb560b470\transformed\print-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] C:\Users\roina\.gradle\caches\8.13\transforms\47fffde1e4c939ab69c9dbefb560b470\transformed\print-1.0.0\AndroidManifest.xml:20:5-44
 	android:targetSdkVersion
 		INJECTED from C:\Users\roina\AndroidStudioProjects\Dive\mobile\src\main\AndroidManifest.xml
 	android:minSdkVersion
 		INJECTED from C:\Users\roina\AndroidStudioProjects\Dive\mobile\src\main\AndroidManifest.xml
 activity#com.google.android.gms.auth.api.signin.internal.SignInHubActivity
-ADDED from [com.google.android.gms:play-services-auth:20.7.0] C:\Users\roina\.gradle\caches\8.13\transforms\8ff76422cc7699de110d84644cdd615b\transformed\play-services-auth-20.7.0\AndroidManifest.xml:23:9-27:75
+ADDED from [com.google.android.gms:play-services-auth:20.7.0] C:\Users\roina\.gradle\caches\8.13\transforms\6f45c3e2d22f5a3e3c37d7e210eb4523\transformed\play-services-auth-20.7.0\AndroidManifest.xml:23:9-27:75
 	android:excludeFromRecents
-		ADDED from [com.google.android.gms:play-services-auth:20.7.0] C:\Users\roina\.gradle\caches\8.13\transforms\8ff76422cc7699de110d84644cdd615b\transformed\play-services-auth-20.7.0\AndroidManifest.xml:25:13-46
+		ADDED from [com.google.android.gms:play-services-auth:20.7.0] C:\Users\roina\.gradle\caches\8.13\transforms\6f45c3e2d22f5a3e3c37d7e210eb4523\transformed\play-services-auth-20.7.0\AndroidManifest.xml:25:13-46
 	android:exported
-		ADDED from [com.google.android.gms:play-services-auth:20.7.0] C:\Users\roina\.gradle\caches\8.13\transforms\8ff76422cc7699de110d84644cdd615b\transformed\play-services-auth-20.7.0\AndroidManifest.xml:26:13-37
+		ADDED from [com.google.android.gms:play-services-auth:20.7.0] C:\Users\roina\.gradle\caches\8.13\transforms\6f45c3e2d22f5a3e3c37d7e210eb4523\transformed\play-services-auth-20.7.0\AndroidManifest.xml:26:13-37
 	android:theme
-		ADDED from [com.google.android.gms:play-services-auth:20.7.0] C:\Users\roina\.gradle\caches\8.13\transforms\8ff76422cc7699de110d84644cdd615b\transformed\play-services-auth-20.7.0\AndroidManifest.xml:27:13-72
+		ADDED from [com.google.android.gms:play-services-auth:20.7.0] C:\Users\roina\.gradle\caches\8.13\transforms\6f45c3e2d22f5a3e3c37d7e210eb4523\transformed\play-services-auth-20.7.0\AndroidManifest.xml:27:13-72
 	android:name
-		ADDED from [com.google.android.gms:play-services-auth:20.7.0] C:\Users\roina\.gradle\caches\8.13\transforms\8ff76422cc7699de110d84644cdd615b\transformed\play-services-auth-20.7.0\AndroidManifest.xml:24:13-93
+		ADDED from [com.google.android.gms:play-services-auth:20.7.0] C:\Users\roina\.gradle\caches\8.13\transforms\6f45c3e2d22f5a3e3c37d7e210eb4523\transformed\play-services-auth-20.7.0\AndroidManifest.xml:24:13-93
 service#com.google.android.gms.auth.api.signin.RevocationBoundService
-ADDED from [com.google.android.gms:play-services-auth:20.7.0] C:\Users\roina\.gradle\caches\8.13\transforms\8ff76422cc7699de110d84644cdd615b\transformed\play-services-auth-20.7.0\AndroidManifest.xml:33:9-37:51
+ADDED from [com.google.android.gms:play-services-auth:20.7.0] C:\Users\roina\.gradle\caches\8.13\transforms\6f45c3e2d22f5a3e3c37d7e210eb4523\transformed\play-services-auth-20.7.0\AndroidManifest.xml:33:9-37:51
 	android:exported
-		ADDED from [com.google.android.gms:play-services-auth:20.7.0] C:\Users\roina\.gradle\caches\8.13\transforms\8ff76422cc7699de110d84644cdd615b\transformed\play-services-auth-20.7.0\AndroidManifest.xml:35:13-36
+		ADDED from [com.google.android.gms:play-services-auth:20.7.0] C:\Users\roina\.gradle\caches\8.13\transforms\6f45c3e2d22f5a3e3c37d7e210eb4523\transformed\play-services-auth-20.7.0\AndroidManifest.xml:35:13-36
 	android:visibleToInstantApps
-		ADDED from [com.google.android.gms:play-services-auth:20.7.0] C:\Users\roina\.gradle\caches\8.13\transforms\8ff76422cc7699de110d84644cdd615b\transformed\play-services-auth-20.7.0\AndroidManifest.xml:37:13-48
+		ADDED from [com.google.android.gms:play-services-auth:20.7.0] C:\Users\roina\.gradle\caches\8.13\transforms\6f45c3e2d22f5a3e3c37d7e210eb4523\transformed\play-services-auth-20.7.0\AndroidManifest.xml:37:13-48
 	android:permission
-		ADDED from [com.google.android.gms:play-services-auth:20.7.0] C:\Users\roina\.gradle\caches\8.13\transforms\8ff76422cc7699de110d84644cdd615b\transformed\play-services-auth-20.7.0\AndroidManifest.xml:36:13-107
+		ADDED from [com.google.android.gms:play-services-auth:20.7.0] C:\Users\roina\.gradle\caches\8.13\transforms\6f45c3e2d22f5a3e3c37d7e210eb4523\transformed\play-services-auth-20.7.0\AndroidManifest.xml:36:13-107
 	android:name
-		ADDED from [com.google.android.gms:play-services-auth:20.7.0] C:\Users\roina\.gradle\caches\8.13\transforms\8ff76422cc7699de110d84644cdd615b\transformed\play-services-auth-20.7.0\AndroidManifest.xml:34:13-89
+		ADDED from [com.google.android.gms:play-services-auth:20.7.0] C:\Users\roina\.gradle\caches\8.13\transforms\6f45c3e2d22f5a3e3c37d7e210eb4523\transformed\play-services-auth-20.7.0\AndroidManifest.xml:34:13-89
 activity#com.google.android.gms.common.api.GoogleApiActivity
-ADDED from [com.google.android.gms:play-services-base:18.0.1] C:\Users\roina\.gradle\caches\8.13\transforms\90803581887c040358eda7e49af1ccdf\transformed\play-services-base-18.0.1\AndroidManifest.xml:20:9-22:45
+ADDED from [com.google.android.gms:play-services-base:18.0.1] C:\Users\roina\.gradle\caches\8.13\transforms\f4d462d1ca8d4912ae5c5cd7071960f0\transformed\play-services-base-18.0.1\AndroidManifest.xml:20:9-22:45
 	android:exported
-		ADDED from [com.google.android.gms:play-services-base:18.0.1] C:\Users\roina\.gradle\caches\8.13\transforms\90803581887c040358eda7e49af1ccdf\transformed\play-services-base-18.0.1\AndroidManifest.xml:22:19-43
+		ADDED from [com.google.android.gms:play-services-base:18.0.1] C:\Users\roina\.gradle\caches\8.13\transforms\f4d462d1ca8d4912ae5c5cd7071960f0\transformed\play-services-base-18.0.1\AndroidManifest.xml:22:19-43
 	android:theme
-		ADDED from [com.google.android.gms:play-services-base:18.0.1] C:\Users\roina\.gradle\caches\8.13\transforms\90803581887c040358eda7e49af1ccdf\transformed\play-services-base-18.0.1\AndroidManifest.xml:21:19-78
+		ADDED from [com.google.android.gms:play-services-base:18.0.1] C:\Users\roina\.gradle\caches\8.13\transforms\f4d462d1ca8d4912ae5c5cd7071960f0\transformed\play-services-base-18.0.1\AndroidManifest.xml:21:19-78
 	android:name
-		ADDED from [com.google.android.gms:play-services-base:18.0.1] C:\Users\roina\.gradle\caches\8.13\transforms\90803581887c040358eda7e49af1ccdf\transformed\play-services-base-18.0.1\AndroidManifest.xml:20:19-85
+		ADDED from [com.google.android.gms:play-services-base:18.0.1] C:\Users\roina\.gradle\caches\8.13\transforms\f4d462d1ca8d4912ae5c5cd7071960f0\transformed\play-services-base-18.0.1\AndroidManifest.xml:20:19-85
 meta-data#com.google.android.gms.version
-ADDED from [com.google.android.gms:play-services-basement:18.2.0] C:\Users\roina\.gradle\caches\8.13\transforms\178f8a1ff4447a3568f121cd7adf33a3\transformed\play-services-basement-18.2.0\AndroidManifest.xml:21:9-23:69
+ADDED from [com.google.android.gms:play-services-basement:18.2.0] C:\Users\roina\.gradle\caches\8.13\transforms\bd1d7bd740188d620f25f1a84785096e\transformed\play-services-basement-18.2.0\AndroidManifest.xml:21:9-23:69
 	android:value
-		ADDED from [com.google.android.gms:play-services-basement:18.2.0] C:\Users\roina\.gradle\caches\8.13\transforms\178f8a1ff4447a3568f121cd7adf33a3\transformed\play-services-basement-18.2.0\AndroidManifest.xml:23:13-66
+		ADDED from [com.google.android.gms:play-services-basement:18.2.0] C:\Users\roina\.gradle\caches\8.13\transforms\bd1d7bd740188d620f25f1a84785096e\transformed\play-services-basement-18.2.0\AndroidManifest.xml:23:13-66
 	android:name
-		ADDED from [com.google.android.gms:play-services-basement:18.2.0] C:\Users\roina\.gradle\caches\8.13\transforms\178f8a1ff4447a3568f121cd7adf33a3\transformed\play-services-basement-18.2.0\AndroidManifest.xml:22:13-58
+		ADDED from [com.google.android.gms:play-services-basement:18.2.0] C:\Users\roina\.gradle\caches\8.13\transforms\bd1d7bd740188d620f25f1a84785096e\transformed\play-services-basement-18.2.0\AndroidManifest.xml:22:13-58
 permission#${applicationId}.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
-ADDED from [androidx.core:core:1.10.1] C:\Users\roina\.gradle\caches\8.13\transforms\9909882e73f4e6139fa7449df7c46b62\transformed\core-1.10.1\AndroidManifest.xml:22:5-24:47
+ADDED from [androidx.core:core:1.10.1] C:\Users\roina\.gradle\caches\8.13\transforms\e8bc455d7ab53c9768f09f9450795f68\transformed\core-1.10.1\AndroidManifest.xml:22:5-24:47
 	android:protectionLevel
-		ADDED from [androidx.core:core:1.10.1] C:\Users\roina\.gradle\caches\8.13\transforms\9909882e73f4e6139fa7449df7c46b62\transformed\core-1.10.1\AndroidManifest.xml:24:9-44
+		ADDED from [androidx.core:core:1.10.1] C:\Users\roina\.gradle\caches\8.13\transforms\e8bc455d7ab53c9768f09f9450795f68\transformed\core-1.10.1\AndroidManifest.xml:24:9-44
 	android:name
-		ADDED from [androidx.core:core:1.10.1] C:\Users\roina\.gradle\caches\8.13\transforms\9909882e73f4e6139fa7449df7c46b62\transformed\core-1.10.1\AndroidManifest.xml:23:9-81
+		ADDED from [androidx.core:core:1.10.1] C:\Users\roina\.gradle\caches\8.13\transforms\e8bc455d7ab53c9768f09f9450795f68\transformed\core-1.10.1\AndroidManifest.xml:23:9-81
 permission#com.example.dive.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
-ADDED from [androidx.core:core:1.10.1] C:\Users\roina\.gradle\caches\8.13\transforms\9909882e73f4e6139fa7449df7c46b62\transformed\core-1.10.1\AndroidManifest.xml:22:5-24:47
+ADDED from [androidx.core:core:1.10.1] C:\Users\roina\.gradle\caches\8.13\transforms\e8bc455d7ab53c9768f09f9450795f68\transformed\core-1.10.1\AndroidManifest.xml:22:5-24:47
 	android:protectionLevel
-		ADDED from [androidx.core:core:1.10.1] C:\Users\roina\.gradle\caches\8.13\transforms\9909882e73f4e6139fa7449df7c46b62\transformed\core-1.10.1\AndroidManifest.xml:24:9-44
+		ADDED from [androidx.core:core:1.10.1] C:\Users\roina\.gradle\caches\8.13\transforms\e8bc455d7ab53c9768f09f9450795f68\transformed\core-1.10.1\AndroidManifest.xml:24:9-44
 	android:name
-		ADDED from [androidx.core:core:1.10.1] C:\Users\roina\.gradle\caches\8.13\transforms\9909882e73f4e6139fa7449df7c46b62\transformed\core-1.10.1\AndroidManifest.xml:23:9-81
+		ADDED from [androidx.core:core:1.10.1] C:\Users\roina\.gradle\caches\8.13\transforms\e8bc455d7ab53c9768f09f9450795f68\transformed\core-1.10.1\AndroidManifest.xml:23:9-81
 uses-permission#${applicationId}.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
-ADDED from [androidx.core:core:1.10.1] C:\Users\roina\.gradle\caches\8.13\transforms\9909882e73f4e6139fa7449df7c46b62\transformed\core-1.10.1\AndroidManifest.xml:26:5-97
+ADDED from [androidx.core:core:1.10.1] C:\Users\roina\.gradle\caches\8.13\transforms\e8bc455d7ab53c9768f09f9450795f68\transformed\core-1.10.1\AndroidManifest.xml:26:5-97
 	android:name
-		ADDED from [androidx.core:core:1.10.1] C:\Users\roina\.gradle\caches\8.13\transforms\9909882e73f4e6139fa7449df7c46b62\transformed\core-1.10.1\AndroidManifest.xml:26:22-94
+		ADDED from [androidx.core:core:1.10.1] C:\Users\roina\.gradle\caches\8.13\transforms\e8bc455d7ab53c9768f09f9450795f68\transformed\core-1.10.1\AndroidManifest.xml:26:22-94
 uses-permission#com.example.dive.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
-ADDED from [androidx.core:core:1.10.1] C:\Users\roina\.gradle\caches\8.13\transforms\9909882e73f4e6139fa7449df7c46b62\transformed\core-1.10.1\AndroidManifest.xml:26:5-97
+ADDED from [androidx.core:core:1.10.1] C:\Users\roina\.gradle\caches\8.13\transforms\e8bc455d7ab53c9768f09f9450795f68\transformed\core-1.10.1\AndroidManifest.xml:26:5-97
 	android:name
-		ADDED from [androidx.core:core:1.10.1] C:\Users\roina\.gradle\caches\8.13\transforms\9909882e73f4e6139fa7449df7c46b62\transformed\core-1.10.1\AndroidManifest.xml:26:22-94
+		ADDED from [androidx.core:core:1.10.1] C:\Users\roina\.gradle\caches\8.13\transforms\e8bc455d7ab53c9768f09f9450795f68\transformed\core-1.10.1\AndroidManifest.xml:26:22-94
